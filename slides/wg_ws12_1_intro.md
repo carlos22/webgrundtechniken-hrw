@@ -232,8 +232,9 @@ HTML und XHTML
 ---
 Web-Browser und Web-Server
 --------------------------
-Client-Server-Kommunikation im WWW
-<img src="images/client_server_comm_www.svg" alt="Client Server Kommunikation im WWW">
+  
+
+<br><img src="images/client_server_comm_www.svg" alt="Client Server Kommunikation im WWW">
 
 ---
 
