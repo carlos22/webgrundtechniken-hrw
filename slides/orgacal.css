@@ -24,3 +24,35 @@ border: solid #ccc 10px;
         width: 620px;
         margin: 0 auto;
 }
+
+.column2 section {
+	-moz-column-count: 2; 
+	-moz-column-gap: 1em; 
+/*	-moz-column-rule: 1px solid grey; */
+	-webkit-column-count: 2; 
+	-webkit-column-gap: 1em; 
+/*	-webkit-column-rule: 1px solid black;*/
+	-o-column-count: 2; 
+	-o-column-gap: 1em; 
+}
+
+.colbreak {
+	-webkit-break-before: column !important;
+	-webkit-break-after: avoid !important;
+	-moz-break-before: column !important;
+	-moz-break-after: avoid !important;
+	-o-break-before: column !important;
+	-o-break-after: avoid !important;
+}
+
+.html5hb {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	border: none;
+	text-decoration: none;
+}
+
+.demo {
+	background-color: #DDD;
+}
