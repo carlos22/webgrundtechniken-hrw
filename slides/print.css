@@ -6,6 +6,10 @@
 	 display: none;
 }
 
- #calendar {
+#calendar {
+	 display: none;
+}
+
+.noprint {
 	 display: none;
 }

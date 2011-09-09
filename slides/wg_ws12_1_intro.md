@@ -17,10 +17,11 @@ Webgrundtechniken
 
 <span style="font-size: small">Drücken Sie `h` für eine Anzeige der Funktionen dieser Präsentation.</span>
 
-<div style="height: 2em"></div>
 
+<a href="http://github.com/carlos22/Webgrundtechniken-WS11-12/raw/master/slides/WebGrundtechniken_WS1112_Slides.pdf">PDF Version</a> | <a href="http://carlos22.github.com/Webgrundtechniken-WS11-12/">HTML5 Version</a>
+
+<div style="height: 3em"></div>
 <span style="font-size: x-small">Teile der Präsentation basieren auf Arbeiten von Dr. Stefan Müller</span>
-
 </div>
 
 ---
@@ -52,6 +53,8 @@ Kalender
 ------------
 <div id='loading' style='display:none'>loading...</div>
 <div id='calendar'></div>
+
+.fx: noprint
 
 ---
 
