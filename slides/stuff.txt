@@ -1,0 +1,39 @@
+HTML Tabellen
+----
+
+<table border="1">
+	<tr>
+		<th>Kopfzeile 1</th><th>Kopfzeile 2</th>
+	</tr>
+	<tr>
+		<td>Inhalt 1</td><td>Inhalt 2</th>
+	</tr>
+</table>
+
+
+	!html
+	<table border="1">
+		<tr>
+			<th>Kopfzeile 1</th><th>Kopfzeile 2</th>
+		</tr>
+		<tr>
+			<td>Inhalt 1</td><td>Inhalt 2</th>
+		</tr>
+	</table>
+
+.notes: Der Rand wird nur zu Visualisierungszwecken angezeigt und ist normalerweise bei dem hier gezeiten Code nicht sichtbar!
+
+### Presenter Notes
+- Rand
+
+---
+
+Math
+----
+
+<b>some text</b> <i>italic</i>
+
+$$ a^2 + b^2 = c^2 $$
+
+
+

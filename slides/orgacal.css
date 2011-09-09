@@ -1,0 +1,26 @@
+#loading {
+ position: absolute;
+ top: 5px;
+ right: 5px;
+}
+
+.zoomed_frame {
+ zoom: 0.8;
+ -moz-transform: scale(0.8);
+ -moz-transform-origin: 0 0;
+ -o-transform: scale(0.8);
+ -o-transform-origin: 0 0;
+ -webkit-transform: scale(0.8);
+ -webkit-transform-origin: 0 0;
+
+width: 1024px; 
+height: 620px; 
+border: none;
+background-color: white;
+border: solid #ccc 10px;
+}
+
+ #calendar {
+        width: 620px;
+        margin: 0 auto;
+}
