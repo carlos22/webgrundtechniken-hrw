@@ -15,7 +15,7 @@ Webgrundtechniken
 ### <a href="mailto:karl.glatz@hs-weingarten.de">karl.glatz@hs-weingarten.de</a>
 
 
-<span style="font-size: small">Drücken Sie `h` für eine Anzeige der Funktionen dieser Präsentation.</span>
+<span style="font-size: small" class="noprint">Drücken Sie `h` für eine Anzeige der Funktionen dieser Präsentation.</span>
 
 
 <a href="http://github.com/carlos22/Webgrundtechniken-WS11-12/raw/master/slides/WebGrundtechniken_WS1112_Slides.pdf">PDF Version</a> | <a href="http://carlos22.github.com/Webgrundtechniken-WS11-12/">HTML5 Version</a>
@@ -70,7 +70,7 @@ Kalender Download
 E-Learning Plattform
 --------------------
 
-# Link: <a href="http://elearning.hs-weingarten.de" target="_blank">elearning.hs-weingarten.de</a>
+## Link: <a href="http://elearning.hs-weingarten.de" target="_blank">elearning.hs-weingarten.de</a>
 
 <iframe src="https://www.elearning.hs-weingarten.de/" border="0" class="zoomed_frame"></iframe>
 

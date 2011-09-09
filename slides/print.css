@@ -11,5 +11,5 @@
 }
 
 .noprint {
-	 display: none;
+	 visibility: hidden;
 }
