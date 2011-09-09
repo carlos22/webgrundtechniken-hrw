@@ -1,6 +1,9 @@
 HTML Basics
 ===========
 
+## Presenter Notes
+Praktischer Einstieg, theorie später!
+
 ---
 
 Das HTML Format
@@ -130,19 +133,24 @@ br erzeugt (weiche) Umbrüche im Text (in Word/Writer: STRG+ENTER)
 ---
 Hyperlinks
 ------
-- Herzstück des WWW
-- Ermöglichen Kontext von Informationen
-- Prizip: Weiterentwicklung von Literaturverzeichnissen aus Wissenschaftlichen Publikationen
 
 	!html
 	<a href="http://scooter.de" target="_blank">HYPER HYPER</a>
+	
 
-<a href="http://scooter.de" target="_blank">HYPER HYPER</a>
+<a class="demo" href="http://scooter.de" target="_blank">HYPER HYPER</a>
+
+- Herzstück des WWW: Ermöglichen Kontext von Informationen
+- Prizip: Weiterentwicklung von Literaturverzeichnissen aus Wissenschaftlichen Publikationen  
+
+- Vordefinierte optionen für `target`
+	- `_blank`: Anzeige des Verweisziels in neuem Fenster
+	- `_self`: Anzeige des Verweisziels in aktuellem Fenster
+	- `_parent`: Anzeige in Vaterfenster bei verschachteltem Frameset
+	- `_top`: Anzeige in Hauptfenster bei verschachteltem Frameset
 
 
-
-<a href="http://webkompetenz.wikidot.com/html-handbuch:links" target="_blank" class="html5hb"><img src="images/html5btn.png" alt="HTML5 Handbuch"></a>
-
+<a href="http://webkompetenz.wikidot.com/html-handbuch:links" target="_blank" title="HTML5 Buch" class="html5hb"><img src="images/html5btn.png" alt="HTML5 Handbuch"></a>
 ---
 
 ---
@@ -150,5 +158,16 @@ CSS Basics
 ==========
 
 ---
+
+Was ist CSS?
+------------
+
+- Stylesprache für HTML
+
+
+Arten von HTML-Elementen
+------------------------
+- Block level vs. inline
+
 
 
