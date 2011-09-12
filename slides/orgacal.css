@@ -56,3 +56,11 @@ border: solid #ccc 10px;
 .demo {
 	background-color: #DDD;
 }
+
+.noheader header {
+	display: none;
+}
+
+.noheader section {
+	margin-top: 30px;
+}

@@ -160,7 +160,7 @@ Entstehung des World Wide Web
 
 ---
 
-Entwicklung der Web-Browser
+Geschichte der Web-Browser
 ---------------------------
 <div style="float: right">
     <img src="images/mosaic_small.png" alt="Mosaic Screenshot"><br>
@@ -182,22 +182,10 @@ Entwicklung der Web-Browser
 > HTML, CSS, XML, …
 
 ---
-Entwicklungen im WWW Heute
---------------------------
-<img src="images/html5.png" alt="HTML5" style="width: 350px; float: right;">
 
-- HTML5
-    - Neue Tags
-        - Audio/Video
-    - SVG (Vektor Grafik)
-    - CSS3 
-        - (Schatten, Runde Ecken, Animation)
-    - Javascript APIs
-        - Canvas
-        - WebGL
-        - Offline Storage
-    - Test unter: 
-        <a href="www.html5test.com">www.html5test.com</a>
+Web-Browser Marktanteile
+-------------------------
+<iframe src="http://fc.webmasterpro.de/global/global-get-report.php?what=Browser&months=35&interval=q&filter=&ch%5BSafari%5D=on&ch%5BOpera%5D=on&ch%5BChrome%5D=on&ch%5BIE%5D=on&ch%5BFirefox%5D=on" width="800" height="450" border="0"></iframe>
 
 ---
 
@@ -231,6 +219,42 @@ HTML und XHTML
 	- HTML definiert mittels XML (XML Parser sind einfacher als SGML Parser)
 	- XHTML 1.0 entspricht HTML 4.01
 	- XHTML 1.1 reduziert auf  Variante Strict
+
+---
+Web-Technologien
+----------------
+<br>
+<img src="images/WebTechnologies.png" alt="HTML" >
+
+---
+
+HTML5
+--------------------------
+<img src="images/html5.png" alt="HTML5" style="width: 350px; float: right;">
+
+
+- Neue Tags
+	- Audio/Video
+	- &lt;article&gt;, &lt;section&gt;, &lt;header&gt;
+- SVG: Vektor Grafik
+- CSS3 
+	- Schatten
+	- Runde Ecken
+	- Animation
+	- Mehr-Spaltiger Text
+- Javascript APIs
+	-Canvas
+        - WebGL
+        - Offline Storage
+- Test unter: 
+	<a href="www.html5test.com">www.html5test.com</a>
+
+---
+HTML5 #2
+--------
+.fx: noheader
+
+<img src="images/HTML5-Technologien3.png" alt="HTML" style="max-width: 850px; max-height: 680px;" >
 
 ---
 Web-Browser und Web-Server
@@ -292,11 +316,14 @@ Server Web-Technologien
 	<a href="http://webkompetenz.wikidot.com/docs:html-handbuch" target="_blank">http://webkompetenz.wikidot.com/docs:html-handbuch</a>  
 	Vom Self-HTML Gründer Stefan Münz (2010)
 
+- HTML5 Buch
+	- http://html5-buch.de/
+	- Viele Demos und Aufgaben
+
 ## Nachschlagewerke Online
 
 - SELFHTML. <a href="http://www.de.selfhtml.org"  target="_blank">www.de.selfhtml.org</a>  
 - Online-Internet-Kurs. <a href="http://www.www-kurs.de" target="_blank">www.www-kurs.de</a>
-- TODO: add more links here
 
 
 ---
