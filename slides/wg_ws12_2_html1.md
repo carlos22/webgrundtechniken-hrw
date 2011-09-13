@@ -22,21 +22,32 @@ Das HTML Format
 .notes: Es gibt sogenannte WYSIWYG Editoren, verwendet kein Profi ⇒ Wir also auch nicht!!
 
 ---
+Aufgabe von HTML
+-----------------
+- Idealisiert:
+	- Textauszeichnung
+		- Bedeutung von Textelementen festlegen (Semantik)
+	- NICHT Textpräsentation, Layout, Design
+		- CSS
+- Realität:
+	- Bau von Webseiten im Zusammenspiel mit CSS und JavaScript
+
+---
 Der HTML-Editor PSPad
 ---------------------
 <img src="images/pspad.png" alt="PSPad HTML Editor Screenshot">
 
 ---
 
-Browser Tools
+Entwicklertools im Browser
 -------------
 
 <img src="images/firebug.png">
 
-- Firefox: <a href="https://addons.mozilla.org/de/firefox/addon/firebug/" target="_blank">Firebug</a>
-- Chrome: Eingebaute Entwicklertools: F12
-- Safari: Eingebaute Entwicklertools: ALT+CONTROL+I
-
+- Firefox: Addon <a href="https://addons.mozilla.org/de/firefox/addon/firebug/" target="_blank">Firebug</a>
+- Chrome:  Schraubenschlüssel => Tools => Entwicklertools | UMSCHALT+STRG+I | F12
+- Safari:  ALT+CONTROL+I
+- Opera:   Tools => Advanced => Opera Dragonfly
 
 Aktuelle Versionen vom Internet Explorer bieten ebenfalls Entwicklertools.
 
@@ -79,10 +90,24 @@ HTML5-Datei Aufbau
 	  </body>
 	</html>
 
+.fx: html5
+
 - HTML5 kennt keine verschiedenen Varianten mehr
 	- Keine Frames mehr!
 	- Kein DTD nötig, da HTML5 formell keine SMGL Sprache mehr ist.
 	- Im nicht-HTML5 Browser: Standards Mode
+---
+HTML Tags
+---------
+
+- Tags sind immer in spitzen Klammern eingeschlosse  
+	<pre><span class="nt">&lt;tagname&gt;</span></pre>
+- Tags werden (fast) immer geschlossen  
+	<pre><span class="nt">&lt;tagname&gt;&lt;/tagname&gt;</span></pre>
+- Zwischen den Tags kann (meist) Text und/oder weitere Tags stehen  
+	<pre><span class="nt">&lt;b&gt;</span>Text<span class="nt">&lt;/b&gt;</span></pre>
+- Tags können (beliebig viele) Attriube haben  
+	<pre><span class="nt">&lt;b <span class="na">class=</span><span class="s">"test"</span>&gt;</span>Text<span class="nt">&lt;/b&gt;</span></pre>
 
 ---
 Text formatierung
@@ -98,7 +123,8 @@ Text formatierung
 P steht für Paragraph und bildet einen Absatz
 
 	!html
-	<p>Das ist etwas Text<br>mit einem Umbruch im Text</p>
+	<p>Das ist etwas Text<br>mit einem 
+	Umbruch im Text</p>
 
 <p class="demo">Das ist etwas Text<br>mit einem Umbruch im Text</p>
 
@@ -129,20 +155,32 @@ br erzeugt (weiche) Umbrüche im Text (in Word/Writer: STRG+ENTER)
 	- Semantische Auszeichnung
 	- Wichtig für maschnielle Verarbeitung, z. B. Suchmaschinenen und Sehbehinderte
 
+---
+Zeilenumbruch
+-------------
+- Zeilenumbruch erzwingen
+	- &lt;br&gt; (Standalone-Element)
+- Zeilenumbruch verhindern
+	- &amp;nbsp; erzeugt ein geschütztes Leerzeichen
+	- An einer solchen Stelle erfolgt kein Umbruch
+	- Alternative Schreibweise: &amp;#160;
+- Bedingter Zeilenumbruch
+	- &amp;shy; markiert eine Stelle an der getrennt werden darf Browserunterstützung mangelhaft, daher vermeiden
+
 
 ---
 Hyperlinks
-------
+----------
 
 	!html
 	<a href="http://scooter.de" target="_blank">HYPER HYPER</a>
+	<a href="[URI]" target="[ZIEL]">[SICHTBARER TEXT]</a>
 	
 
 <a class="demo" href="http://scooter.de" target="_blank">HYPER HYPER</a>
 
 - Herzstück des WWW: Ermöglichen Kontext von Informationen
 - Prizip: Weiterentwicklung von Literaturverzeichnissen aus Wissenschaftlichen Publikationen  
-
 - Vordefinierte optionen für `target`
 	- `_blank`: Anzeige des Verweisziels in neuem Fenster
 	- `_self`: Anzeige des Verweisziels in aktuellem Fenster
@@ -151,7 +189,199 @@ Hyperlinks
 
 
 <a href="http://webkompetenz.wikidot.com/html-handbuch:links" target="_blank" title="HTML5 Buch" class="html5hb"><img src="images/html5btn.png" alt="HTML5 Handbuch"></a>
+
 ---
+URI: Uniform Resource Identifier
+--------------------------------
+<br>
+<blockqoute class="bigqoute">Ein Uniform Resource Identifier (URI) (engl. „einheitlicher Bezeichner für Ressourcen“) ist ein Identifikator und besteht aus einer Zeichenfolge, die zur Identifizierung einer abstrakten oder physischen Ressource dient. URIs werden zur Bezeichnung von Ressourcen (wie Webseiten, sonstigen Dateien, Aufruf von Webservices, aber auch z. B. E-Mail-Empfängern) im Internet und dort vor allem im WWW eingesetzt.</blockqoute>
+
+
+<a href="http://de.wikipedia.org/wiki/Uniform_Resource_Identifier" target="_blank" title="Wikipedia" class="html5hb"><img src="images/wikipedia.png" alt="HTML5 Handbuch"></a>
+
+---
+Verweise innerhalb einer Datei
+------------------------------
+
+- TODO
+
+
+---
+Listen: Aufzählungslisten (unordered list)
+-----------------------------
+
+	!html
+	<h2>Einkaufsliste</h2>
+	<ul>
+		<li>Milch</li>
+		<li>Eier</li>
+		<ul>
+			<li>3x Bio</li>
+			<li>2x Freiland</li>
+		</ul>
+		<li>Spagetti</li>
+	</ul>
+
+<div class="demo">
+<h2>Einkaufsliste</h2>
+<ul>
+	<li>Milch</li>
+	<li>Eier</li>
+	<ul>
+		<li>3x Bio</li>
+		<li>2x Freiland</li>
+	</ul>
+	<li>Spagetti</li>
+</ul>
+</div>
+
+<b>ul</b>: <b>u</b>norderd <b>l</b>ist | <b>li</b>: <b>l</b>ist <b>i</b>tem
+
+### Presenter Notes
+Kind-Elemente ul: li-Elemente  
+Eltern-Elemente li: ul- oder ol-Elemente  
+Kind-Elemente li: Block-Elemente und Inline-Elemente  
+Beliebige Verschachtelungen von Listen sind möglich  
+
+---
+Nummerierte Listen (ordered list)
+----------------------------------
+	!html
+	<h2>Anleitung</h1>
+	<ol>
+		<li>Download</li>
+		<li>Entpacken</li>
+		<li>Starten ...</li>
+	</ol>
+<div class="demo">
+<h2>Anleitung</h1>
+<ol>
+	<li>Download</li>
+	<li>Entpacken</li>
+	<li>Starten ...</li>
+</ol>
+</div>
+
+<b>Achtung:</b> Verschachtelung nummerierter Listen bewirkt keine Nummerierungshierarchie (<a href="http://aktuell.de.selfhtml.org/artikel/css/nummerierung/">Mit CSS möglich</a>)
+
+---
+Präformatierter Text
+--------------------
+	!html
+	<pre>präformatierter 
+		<b>Text</b> mit ein paar
+	Umbrüchen und
+	        Einrückungen!</pre>
+
+<pre class="demo">präformatierter 
+		<b>Text</b> mit ein paar
+	Umbrüchen und
+	        Einrückungen!</pre>
+
+Anzeige mit Formatierungen in dichtengleicher Schrift  
+Aber: HTML-Zeichen werden interpretiert
+
+- Verwendung
+	- Anzeige von Quellcode
+	- vordefinierten Tabellen, etc.
+
+---
+Zitate und Adressen
+-------------------
+	!html
+	<blockquote><p>there are only two hard problems in computing: caching, 
+	concurrency and off-by-one errors</p></blockquote>
+<blockquote class="demo"><p>there are only two hard problems in computing: caching, concurrency and off-by-one errors</p></blockquote>
+
+- Zitate
+	- Kind-Elemente: Block-Elemente
+	- Attribut cite: URI der zitierten Quelle (ohne Visualisierung)
+	- &lt;blockquote cite="http://www.hs-weingarten.de/"&gt; ...
+- Adressen
+	Kind-Elemente: Inline-Elemente
+
+	!html
+	<address>Hochschule Ravensburg-Weingarten<br>
+	Doggenried Str.<br>
+	88250 Weingarten</address>
+
+---
+Logische Textauszeichnung
+---------------------------------------
+.fx: column2
+
+- Logische Auszeichnungen im Text
+	- Elemente definieren logische Bedeutung unabhängig von einer konkreten Darstellung
+	- Logische Auszeichnungen sind Inline-Elemente
+- Elemente zur logischen Textauszeichnung
+	- <span class="nt">em</span> – empathisch, betont
+	- <span class="nt">strong</span> – stark betont
+	- <span class="nt">code</span> – Quelltext
+	- <span class="nt">samp</span> – Beispiel
+	- <span class="nt">kbd</span> – Benutzereingaben
+	- <span class="nt">var</span> – Variable
+	- <span class="nt">cite</span> – Quelle oder Autor
+	- <span class="nt">dfn</span> – Definition
+	- <span class="nt">abbr</span> – Abkürzung
+	- <span class="nt">acronym</span> – Akronym
+	- <span class="nt">q</span> - Zitat
+	- <span class="nt">del</span> - gelöschter Text   
+	  <span class="nt">ins</span> - eingefügter Text
+		- Attribut <span class="na">datetime</span>: Zeitpunkt der Änderung
+		- Attribut <span class="na">cite</span>: URI als Grund für Änderung
+
+
+---
+Physische Textauszeichnung
+----------------------------------------
+.fx: column2
+
+- HTML4: Elemente definieren direkt eine gewünschte Darstellung
+- HTML5: Jeweils "schwache" semantische Bedeutung zugeordnet => Styling CSS
+- Elemente zur physischen Textauszeichnung
+	- <span class="nt">b</span> – fett (bold)
+	- <span class="nt">i</span> – kursiv (italic)
+	- <del><span class="nt">tt</span> – dichtengleich (teletyper)</del><sup>*</sup>
+	- <del><span class="nt">big</span> – größer als normal</del><sup>*</sup>
+	- <del><span class="nt">center</span> - zentriert</del><sup>*</sup>
+	- <del><span class="nt">strike</span> - durchgestrichen</del><sup>*</sup>
+	- <span class="nt">small</span> – kleiner als normal
+	- <span class="nt">sup</span> – hochgestellt (superior)
+	- <span class="nt">sub</span> – tiefgestellt (subordinate)
+- Sonstige Elemente: <span class="nt">hr</span> – trennlinie
+
+<div style="-webkit-break-before: column;-moz-break-before: column">
+<sup>*</sup>nicht in HTML5: <a href="http://www.w3.org/TR/html5-diff/#absent-elements">W3C: HTML5 vs HTML4</a>
+</div>
+
+---
+Allgemeine Elemente für Textbereiche
+------------------------
+- Allgemeines Block-Element
+	- <span class="nt">div</span>
+	- Kind-Elemente: Block-Elemente und Inline-Elemente
+- Allgemeines Inline-Element
+	- <span class="nt">span</span>
+	- Kind-Elemente: Inline-Elemente
+- Formatierung allgemeiner Elemente mit CSS
+	- Allgemeine Elemente ermöglichen die logische Auszeichnung von	Abschnitten oder Blöcken
+	- Formatierung mit CSS
+
+
+---
+Allgemeine Elemente HTML5
+------------------------
+
+.fx: html5
+
+- HTML5 biete neue allgemeine Elemente
+	- <span class="nt">article</span> – Artikel z. B. in einem Blog
+	- <span class="nt">section</span> – Abschnitt eines Textes
+	- <span class="nt">nav</span> – Navigation, Menü
+	- <span class="nt">header</span> – Kopf einer Seite
+	- <span class="nt">footer</span> – Fuß einer Seite
+
+- Alle Elemente verhalten sich wie das <span class="nt">div</span>, bieten jedoch die möglichkeit das HTML-Dokument besser zu strukturieren
 
 ---
 CSS Basics
@@ -159,15 +389,63 @@ CSS Basics
 
 ---
 
-Was ist CSS?
+CSS: Cascading Style Sheets
 ------------
+- CSS ist eine Sprache zum styling von HTML Dokumenten
 
-- Stylesprache für HTML
 
+---
 
-Arten von HTML-Elementen
+Verhalten von HTML-Elementen: Block
 ------------------------
-- Block level vs. inline
+
+	!html
+	<div>
+		<h1>Überschrift</h1>
+		<p>Etwas Text</p>
+		Nur <b>Text</b> ohne p...
+	</div>
 
 
+<div class="demo border">
+	<h1>Überschrift</h1>
+	<p>Etwas Text</p>
+	Nur <b>Text</b> ohne p...
+</div>
+
+
+- Block-Elemente
+	- Erzeugen einen eigenen Absatz im Textfluss
+	- Können i.d.R. enthalten
+		-Text (#PCDATA)
+		- Block-Elemente
+		- Inline-Elemente
+		- Beispiele: &lt;h1&gt;, &lt;div&gt;, &lt;table&gt;
+
+
+
+---
+Verhalten von HTML-Elementen: Inline
+--------------------------------
+- Inline-Elemente
+	- Erzeugen keinen Absatz im Textfluss
+	- Können i.d.R. enthalten
+		-Text (#PCDATA)
+		- Inline-Elemente
+	- Beispiele: &lt;br&gt;, &lt;i&gt;, &lt;span&gt;, ...
+
+- Unsichtbare-Elemente
+	- Beispiele: &lt;meta&gt;, &lt;style&gt;, &lt;script&gt;
+
+- Steuerbar mit CSS  
+	<pre><span class="lineno">1</span> <span class="nt"><a href="http://www.css4you.de/display.html" target="_blank" style="border: none;">display</a></span><span class="o">:</span> <span class="nt">none</span> | <span class="nt">block</span> | <span class="nt">inline</span> | ...</pre>
+
+
+<div class="rightbox">
+	<ul>
+		<li><a href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_display&preval=inline" target="_blank">Demo</a></li>
+		<li><a href="http://www.w3.org/TR/CSS2/sample.html">W3C: Default Style HTML4</a></li>
+	</ul>
+</div>
+---
 
