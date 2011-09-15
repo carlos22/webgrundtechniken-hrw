@@ -6,6 +6,22 @@ Praktischer Einstieg, theorie später!
 
 ---
 
+HTML Bascis: Inhalt / Ziel
+--------------------
+
+- Was ist HTML?
+- HTML Grundgerüst
+- Textformatierung
+- Links
+- Listen
+- Weitere Textauszeichungen (physisch und logisch)
+- Allgemeine HTML Elemente
+- Bilder einbinden
+
+=> Vertiefung der Kentnisse in Übung 1 (nächste Woche).
+
+---
+
 Das HTML Format
 ---------------
 
@@ -202,8 +218,31 @@ URI: Uniform Resource Identifier
 ---
 Verweise innerhalb einer Datei
 ------------------------------
+	!html
+	<a href="[URI]#[Ankername]">Verweistext</a>
 
-- TODO
+- Regeln für Ankernamen (bzw. IDs):  
+	- sollten nur Buchstaben, Ziffern und die Sonderzeichen Unterstrich, Bindestrich, Punkt und Doppelpunkt enthalten
+	- Ankernamen und ID-Attribute müssen dateiweit eindeutig sein
+
+Beispiel: <a href="http://de.wikipedia.org/wiki/Html#Syntax">Wikipedia Artikel HTML, Abschnitt Syntax</a>
+
+---
+Verweise zu Email-Adressen
+--------------------------
+
+	!html
+	<a href="mailto:[email-Adresse]">Verweistext</a>
+	<a href="mailto:karl.glatz@hs-weingarten.de">Karl</a>
+	<a href="mailto:karl.glatz@hs-weingarten.de?cc=karl.glatz@gmail.com">
+	Karl Glatz</a>
+
+- Optionen bei Email-Verweisen
+	- cc, bcc, subject und body
+- Optionen werden als Parameter des href-Attributs übergeben, eingeleitet durch ein ?
+- Problem: Spam-Bots durchsuchen internet nach mailto: Adressen!
+	- Lösungen: oft wird die Adresse verunstaltet oder mit JS encodiert
+
 
 
 ---
@@ -380,8 +419,10 @@ Allgemeine Elemente HTML5
 	- <span class="nt">nav</span> – Navigation, Menü
 	- <span class="nt">header</span> – Kopf einer Seite
 	- <span class="nt">footer</span> – Fuß einer Seite
+	- <span class="nt">aside</span> – z.B. Sidebar bei einem Blog
 
-- Alle Elemente verhalten sich wie das <span class="nt">div</span>, bieten jedoch die möglichkeit das HTML-Dokument besser zu strukturieren
+- Alle Elemente verhalten sich wie das <span class="nt">div</span>, bieten jedoch die möglichkeit das HTML-Dokument besser zu strukturieren.
+
 
 ---
 CSS Basics
