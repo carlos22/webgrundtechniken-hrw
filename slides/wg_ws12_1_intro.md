@@ -45,7 +45,7 @@ Lernziele
 Organisation
 ------------
 
-# TODO
+### TODO
 
 ---
 
@@ -70,7 +70,7 @@ Kalender Download
 E-Learning Plattform
 --------------------
 
-## Link: <a href="http://elearning.hs-weingarten.de" target="_blank">elearning.hs-weingarten.de</a>
+### Link: <a href="http://elearning.hs-weingarten.de" target="_blank">elearning.hs-weingarten.de</a>
 
 <iframe src="https://www.elearning.hs-weingarten.de/" border="0" class="zoomed_frame"></iframe>
 
