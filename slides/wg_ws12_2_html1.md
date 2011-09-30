@@ -215,6 +215,9 @@ URI: Uniform Resource Identifier
 
 <a href="http://de.wikipedia.org/wiki/Uniform_Resource_Identifier" target="_blank" title="Wikipedia" class="html5hb"><img src="images/wikipedia.png" alt="HTML5 Handbuch"></a>
 
+### Presenter Notes
+- Nicht nur Adressen von Webseiten sondern auch von Resourcen innerhalb der Webseite (Grafiken, CSS etc.)
+
 ---
 Verweise innerhalb einer Datei
 ------------------------------
@@ -423,70 +426,68 @@ Allgemeine Elemente HTML5
 
 - Alle Elemente verhalten sich wie das <span class="nt">div</span>, bieten jedoch die möglichkeit das HTML-Dokument besser zu strukturieren.
 
+---
+Grafikformate: Vektor und Pixel
+-------------------------------
+.fx: column2
+
+- Pixel:
+	- <b>JPEG</b>: Joint Photographic Experts Group
+		- Verlustbehaftetes Format
+		- Einsatzzweck: Fotos von Personen, Landschaften etc.
+	- <b>PNG</b>: Portable Network Graphics
+		- Verlustfreies Format
+		- Echte Transparenz: Alpha Kanal
+		- Animierte Varianten: APNG, MNG (fehlender Browser Support)
+		- Einsatz: Alle Grafiken wie Verläufe, Comics, Zeichnungen, Buttons etc.
+	- <b>GIF</b>: Graphics Interchange Format
+		- Verlustfreies Format
+		- Limitierter Farbraum
+		- Einfache Transparenz (1-Bit)
+		- Einsatzzweck: Animation
+		- <b>Veraltetes Format!</b>
+- Vektor:
+	- <b>SVG</b>: Scalable Vector Graphics
+		- Einsatzzweck: Grafiken wie Karten, Logos, Wappen, Zeichnungen, usw.
+	- <a href="http://diveintohtml5.org/canvas.html" target="_blank"><b>Canvas</b></a>: Generierte Vektorgrafik
+		- Einsatzzweck: Interaktive Spiele, Animationen etc.
+		- Grafik muss programmiert werden in JavaScript
+
+<a href="http://webkompetenz.wikidot.com/html-handbuch:canvas-vektorgrafik" target="_blank" title="HTML5 Buch: Grafiken" class="html5hb"><img src="images/html5btn.png" alt="HTML5 Handbuch"></a>
+
+## Presenter Notes
+
+- SVG Tools: Inkscape, Adobe Illustrator
+- Pixel Tools: Photoshop, Gimp etc.
 
 ---
-CSS Basics
-==========
-
----
-
-CSS: Cascading Style Sheets
-------------
-- CSS ist eine Sprache zum styling von HTML Dokumenten
-
-
----
-
-Verhalten von HTML-Elementen: Block
-------------------------
-
+Einbinden von Bildern
+---------------------
 	!html
-	<div>
-		<h1>Überschrift</h1>
-		<p>Etwas Text</p>
-		Nur <b>Text</b> ohne p...
-	</div>
+	<img src="[URI]" alt="[Alternativtext]">
 
-
-<div class="demo border">
-	<h1>Überschrift</h1>
-	<p>Etwas Text</p>
-	Nur <b>Text</b> ohne p...
-</div>
-
-
-- Block-Elemente
-	- Erzeugen einen eigenen Absatz im Textfluss
-	- Können i.d.R. enthalten
-		-Text (#PCDATA)
-		- Block-Elemente
-		- Inline-Elemente
-		- Beispiele: &lt;h1&gt;, &lt;div&gt;, &lt;table&gt;
-
-
+- Referenz auf eine Graphik
+	- img-Element ist Standalone-Element
+- Attribut `src` bestimmt die Graphikdatei
+	Beachten Sie die Möglichkeiten zur Referenzierung von Dateien in HTML
+- Attribut `alt` definiert alternativen Text 
+	- IE: Tooltip
+		- Tooltips normalerweise via Universalattribute `title`
+	- Alle: Falls Bild nicht angezeigt werden kann; Screenreader
 
 ---
-Verhalten von HTML-Elementen: Inline
---------------------------------
-- Inline-Elemente
-	- Erzeugen keinen Absatz im Textfluss
-	- Können i.d.R. enthalten
-		-Text (#PCDATA)
-		- Inline-Elemente
-	- Beispiele: &lt;br&gt;, &lt;i&gt;, &lt;span&gt;, ...
+(Veraltete) Attribute für Bilder
+-------------------------------
+- Größe der Grafik: `width`, `height`
+	- Bei langsamen Verbindungen führt angabe zur schnelleren Seitendarstellung
+	- Abweichende Größen zum Original sind nicht empfehlenswert:
+		- Schlechte Skalierungsalgorithmen der Browser
+		- Höhere Ladezeiten bei verkleinerung der Grafiken
+- Ausrichtung:
+	- `align`, `vspace`, `hspace`
+- <span class="important">Für beides sollte heute CSS verwendet werden! (HTML4 Strict/HTML5)</span>
 
-- Unsichtbare-Elemente
-	- Beispiele: &lt;meta&gt;, &lt;style&gt;, &lt;script&gt;
-
-- Steuerbar mit CSS  
-	<pre><span class="lineno">1</span> <span class="nt"><a href="http://www.css4you.de/display.html" target="_blank" style="border: none;">display</a></span><span class="o">:</span> <span class="nt">none</span> | <span class="nt">block</span> | <span class="nt">inline</span> | ...</pre>
+- <a href="http://webkompetenz.wikidot.com/html-handbuch:image-maps" target="_blank">Image Maps</a>: Verweissensitive Grafiken
 
 
-<div class="rightbox">
-	<ul>
-		<li><a href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_display&preval=inline" target="_blank">Demo</a></li>
-		<li><a href="http://www.w3.org/TR/CSS2/sample.html">W3C: Default Style HTML4</a></li>
-	</ul>
-</div>
----
 
