@@ -45,7 +45,16 @@ Lernziele
 Organisation
 ------------
 
-### TODO
+- Vorlesung Montags 14:15 in H061
+- Übungen, Montags 14:15 in V206/V208 (zwei Räume paralell!)
+	- Übungsaufgaben sind Pflicht! (mindestens 80%)
+	- Testate durch Tutoren
+- Prüfungsleistung: Praktische Arbeit
+	- Durchführung eines umfangreicheren <b>Web-Projekts</b> (in Zweiergruppen)
+		- Erstellung einer Web-Präsentation für eine Firma, ein Projekt, Verein etc. (fiktiv oder real)
+		- Beginn: 28.11.11 (spätestens)
+		- Meilenstein 1: 19.12.2011 / Meilenstein 2: 9.12.2011
+		- Finale Präsentation des Projekts (mündliche Prüfungsleistung): <br>23.1.12 / 30.1.12
 
 ---
 
