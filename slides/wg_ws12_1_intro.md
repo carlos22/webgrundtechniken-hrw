@@ -50,7 +50,7 @@ Organisation
 	- Übungsaufgaben sind Pflicht! (mindestens 80%)
 	- Testate durch Tutoren
 - Prüfungsleistung: Praktische Arbeit
-	- Durchführung eines umfangreicheren <b>Web-Projekts</b> (in Zweiergruppen)
+	- Durchführung eines umfangreicheren <b>Web-Projekts</b> (in 2-3er Gruppen)
 		- Erstellung einer Web-Präsentation für eine Firma, ein Projekt, Verein etc. (fiktiv oder real)
 		- Beginn: 28.11.11 (spätestens)
 		- Meilenstein 1: 19.12.2011 / Meilenstein 2: 9.12.2011
