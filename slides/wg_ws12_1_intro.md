@@ -52,9 +52,9 @@ Organisation
 - Prüfungsleistung: Praktische Arbeit
 	- Durchführung eines umfangreicheren <b>Web-Projekts</b> (in 2-3er Gruppen)
 		- Erstellung einer Web-Präsentation für eine Firma, ein Projekt, Verein etc. (fiktiv oder real)
-		- Beginn: 28.11.11 (spätestens)
-		- Meilenstein 1: 19.12.2011 / Meilenstein 2: 9.12.2011
-		- Finale Präsentation des Projekts (mündliche Prüfungsleistung): <br>23.1.12 / 30.1.12
+		- Beginn: 28.11.2011 (spätestens)
+		- Meilenstein 1: 18.12.2011 / Meilenstein 2: 8.01.2012
+		- Finale Präsentation des Projekts (mündliche Prüfungsleistung): <br>23.01.2012 / 30.01.2012
 
 ---
 
@@ -132,7 +132,7 @@ Die Dienste des Internet
 -   Protokoll: FTP (File Transfer Protocol)
 - E-Mail (elektronische Post)  
     Standard für den Versand von E-Mails über das Internet  
-    Protokoll: SMTP (Simple Mail Transfer Protocol),  POP3 (Post Office Protocol), IMAP
+    Protokoll: SMTP (Simple Mail Transfer Protocol),  POP3 (Post Office Protocol), IMAP
 - Newsgroups (auch Usenet)  
     Übertragung von Netzwerk-Nachrichten  
     Protokoll: NNTP für Net News Transfer Protocol
