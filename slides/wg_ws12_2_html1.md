@@ -183,6 +183,11 @@ Zeilenumbruch
 - Bedingter Zeilenumbruch
 	- &amp;shy; markiert eine Stelle an der getrennt werden darf Browserunterstützung mangelhaft, daher vermeiden
 
+---
+Sonderzeichen
+-----
+
+TODO: insert
 
 ---
 Hyperlinks
@@ -330,22 +335,23 @@ Aber: HTML-Zeichen werden interpretiert
 ---
 Zitate und Adressen
 -------------------
+
 	!html
 	<blockquote><p>there are only two hard problems in computing: caching, 
 	concurrency and off-by-one errors</p></blockquote>
 <blockquote class="demo"><p>there are only two hard problems in computing: caching, concurrency and off-by-one errors</p></blockquote>
 
 - Zitate
-	- Kind-Elemente: Block-Elemente
 	- Attribut cite: URI der zitierten Quelle (ohne Visualisierung)
 	- &lt;blockquote cite="http://www.hs-weingarten.de/"&gt; ...
 - Adressen
-	Kind-Elemente: Inline-Elemente
 
+<br>
 	!html
-	<address>Hochschule Ravensburg-Weingarten<br>
-	Doggenried Str.<br>
-	88250 Weingarten</address>
+	 <address>Hochschule Ravensburg-Weingarten<br>
+	 Doggenried Str.<br>
+	 88250 Weingarten</address>
+
 
 ---
 Logische Textauszeichnung
@@ -463,6 +469,7 @@ Grafikformate: Vektor und Pixel
 ---
 Einbinden von Bildern
 ---------------------
+
 	!html
 	<img src="[URI]" alt="[Alternativtext]">
 

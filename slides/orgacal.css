@@ -67,6 +67,8 @@ blockqoute.bigqoute {
 
 .demo {
 	background-color: #DDD;
+	padding: 3px;
+	margin:12px 0 12px 0;
 }
 
 .rightbox {
@@ -98,4 +100,13 @@ blockqoute.bigqoute {
 .important {
 	font-weight: bold;
 	font-size: 1.2em;
+}
+
+em {
+	font-weight: bold;
+		
+}
+
+h3 {
+	font-size: 1.47em !important;
 }
