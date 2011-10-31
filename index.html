@@ -13364,13 +13364,29 @@ Ist ein alternatives Design für den Ausdruck vorhanden?<br />
       
       <!-- slide source: wg_ws12_2_html1.md -->
       <div class="slide-wrapper">
-        <div class="slide">
+        <div class="slide has_code">
           <div class="inner">
             
             <header><h2>Sonderzeichen</h2></header>
             
             
-            <section><p>TODO: insert</p></section>
+            <section><p><code>&amp;nbsp;</code>        geschützes leerzeichen<br />
+<code>&amp;gt;</code>          &gt;<br />
+<code>&amp;lt;</code>          &lt;<br />
+<code>&amp;amp;</code>         &amp;<br />
+</p>
+<p><code>&amp;auml;</code>        ä<br />
+<code>&amp;uuml;</code>        ü<br />
+<code>&amp;Ouml;</code>        Ö<br />
+<code>&amp;szlig;</code>       ß<br />
+</p>
+<p>Beispiel:</p>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="nt">&lt;b&gt;</span> 5 <span class="ni">&amp;gt;</span> 3 <span class="nt">&lt;/b&gt;</span>
+</pre></div>
+
+<div class="demo">
+<b> 5 &gt; 3 </b>
+</div></section>
             
           </div>
           <div class="presenter_notes">
@@ -13733,19 +13749,16 @@ Aber: HTML-Zeichen werden interpretiert</p>
 </pre></div>
 
 <p><blockquote class="demo"><p>there are only two hard problems in computing: caching, concurrency and off-by-one errors</p></blockquote></p>
+<h3>Zitate</h3>
 <ul>
-<li>Zitate<ul>
 <li>Attribut cite: URI der zitierten Quelle (ohne Visualisierung)</li>
-<li>&lt;blockquote cite="http://www.hs-weingarten.de/"&gt; ...</li>
+<li><code>&lt;blockquote cite="http://www.hs-weingarten.de/"&gt;</code> ...</li>
 </ul>
-</li>
-<li>Adressen</li>
-</ul>
-<p><br>
-    !html
-     <address>Hochschule Ravensburg-Weingarten<br>
-     Doggenried Str.<br>
-     88250 Weingarten</address></p></section>
+<h3>Adressen</h3>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="nt">&lt;address&gt;</span>Hochschule Ravensburg-Weingarten<span class="nt">&lt;br&gt;</span>
+<span class="lineno">2</span> Doggenried Str.<span class="nt">&lt;br&gt;</span>88250 Weingarten<span class="nt">&lt;/address&gt;</span>
+</pre></div>
+</section>
             
           </div>
           <div class="presenter_notes">
@@ -15146,12 +15159,13 @@ h4.testbefore:after { content: " " url('http://up.frubar.net/1170/css_icon.png')
 <ul>
 <li>Schriftarten werden in angegebener Reihenfolge verwendet</li>
 <li>Schriftarten mit Leerzeichen werden in Hochkomma gesetzt</li>
-<li>
-<p>Schriftfamilien: serif, sans-serif, cursive, fantasy, monospace (oft als letzte Angabe)</p>
-<p>!css
-font-family:Verdana,sans-serif</p>
+<li>Schriftfamilien: serif, sans-serif, cursive, fantasy, monospace (oft als letzte Angabe) <br />
 </li>
 </ul>
+<p>Beispiel:</p>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="nt">font-family</span><span class="nd">:Verdana</span><span class="o">,</span><span class="nt">sans-serif</span>
+</pre></div>
+
 <h3>Schriftstil</h3>
 <div class="highlight"><pre><span class="lineno">1</span> <span class="nt">font-style</span><span class="o">:[</span><span class="nt">italic</span><span class="o">|</span><span class="nt">oblique</span><span class="o">|</span><span class="nt">normal</span><span class="o">]</span>
 </pre></div>
