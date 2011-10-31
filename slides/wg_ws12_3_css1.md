@@ -414,10 +414,13 @@ CSS-Eigenschaften: Schriftformat
 
 * Schriftarten werden in angegebener Reihenfolge verwendet
 * Schriftarten mit Leerzeichen werden in Hochkomma gesetzt
-* Schriftfamilien: serif, sans-serif, cursive, fantasy, monospace (oft als letzte Angabe)
+* Schriftfamilien: serif, sans-serif, cursive, fantasy, monospace (oft als letzte Angabe)   
+
+Beispiel:
 
 	!css
 	font-family:Verdana,sans-serif
+
 
 ### Schriftstil
 	

@@ -187,7 +187,25 @@ Zeilenumbruch
 Sonderzeichen
 -----
 
-TODO: insert
+`&nbsp;`		geschützes leerzeichen  
+`&gt;`			>  
+`&lt;`			<  
+`&amp;`			&  
+
+
+`&auml;`		ä  
+`&uuml;`		ü  
+`&Ouml;`		Ö  
+`&szlig;`		ß  
+
+Beispiel:
+
+	!html
+	<b> 5 &gt; 3 </b>
+
+<div class="demo">
+<b> 5 &gt; 3 </b>
+</div>
 
 ---
 Hyperlinks
@@ -341,17 +359,15 @@ Zitate und Adressen
 	concurrency and off-by-one errors</p></blockquote>
 <blockquote class="demo"><p>there are only two hard problems in computing: caching, concurrency and off-by-one errors</p></blockquote>
 
-- Zitate
-	- Attribut cite: URI der zitierten Quelle (ohne Visualisierung)
-	- &lt;blockquote cite="http://www.hs-weingarten.de/"&gt; ...
-- Adressen
+### Zitate
+* Attribut cite: URI der zitierten Quelle (ohne Visualisierung)
+* `<blockquote cite="http://www.hs-weingarten.de/">` ...
+	
+### Adressen
 
-<br>
 	!html
-	 <address>Hochschule Ravensburg-Weingarten<br>
-	 Doggenried Str.<br>
-	 88250 Weingarten</address>
-
+	<address>Hochschule Ravensburg-Weingarten<br>
+	Doggenried Str.<br>88250 Weingarten</address>
 
 ---
 Logische Textauszeichnung
