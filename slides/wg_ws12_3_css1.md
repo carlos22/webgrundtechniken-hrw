@@ -368,7 +368,7 @@ Kaskadierung von Stylesheets
 ----------------------------
 * Spezifität der Selektoren
 	* Grundidee: *spezifischere* CSS-Definitionen *haben Vorrang* vor unspezifischeren
-	* Beispiel: `myheading.h2` überschreibt `.h2`
+	* Beispiel: `h2.myheading` überschreibt `h2`
 
 * Sortierung nach Spezifität
 	* Nach dem *Ort* der Definition: CSS-Definitionen per *`style`*-Attribute haben Vorrang
@@ -379,7 +379,7 @@ Kaskadierung von Stylesheets
 
 
 ---
-Analysevon Styles: FF
+Analyse von Styles: FF
 ---------------------------------
 
 Analyse der Darstellung von CSS-formatierten Seiten im Firefox mit dem Add-on Firebug
@@ -468,6 +468,37 @@ Reihenfolge ist einzuhalten `font-size` und `font-family` sind obligatorisch `fo
 	
 	!css
 	font:italic bold 1.2em/1.4em Verdana
+
+
+---
+CSS: Farben
+-----------------------------------
+
+    !css
+    p {
+        color: red;
+        background-color: blue;
+    }
+
+* Vordergrundfarbe: `color`
+* Hintergrundfarbe: `background-color`
+* Farbangaben:
+    * `#RGB` bzw. `#RRGGBB` (Hexadezimal)
+    * `rgb(0-255, 0-255, 0-255)`
+    * Keywords: `black, white, red, blue, green, lightblue`
+* Beispiel <span style="background-color: red; color: white"'>ROT</span> `#FF0000` oder `rgb(255,0,0)` oder `red`
+
+---
+CSS: Hintergrund
+----------------
+Hintergrundbilder
+
+    !css
+        p { background: red url(images/bg.png) fixed repeat-y; }
+
+Werte: `background-color, background-image, background-attachment, background-repeat, background-position`
+
+Bild-Adressen mit `url('pfad/zum/bild/Datei.png')`
 
 ---
 CSS: Absatzformatierung
