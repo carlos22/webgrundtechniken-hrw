@@ -488,6 +488,9 @@ CSS: Farben
     * Keywords: `black, white, red, blue, green, lightblue`
 * Beispiel <span style="background-color: red; color: white"'>ROT</span> `#FF0000` oder `rgb(255,0,0)` oder `red`
 
+<a href="http://www.w3schools.com/cssref/css_colors.asp">W3C Schools: CSS Colors</a>
+Web Tool: <a href="http://html-color-codes.info/">HTML Color Codes</a>
+
 ---
 CSS: Hintergrund
 ----------------

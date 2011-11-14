@@ -250,10 +250,119 @@ Anzeige von Elementen
 Unterschied zwischen `visibility: hidden` und `display: none`: Berechnung der Position anderer Elemente!
 
 ---
-Positionierung Beispiel
+Positionierung: Relativ
 ---------------------------------
 
-TODO
+.fx: column2
+
+	!html
+	<html>
+	<head>
+	<title>Relative Positioning</title>
+	<style>
+	.parent {
+	background: #999;
+	}
+	.child {
+	position: relative;
+	top: 20px;
+	left: 40px;
+	background: #ccc;
+	}
+	</style>
+	</head>
+	<body>
+	<div class="parent">
+	<p>This is the parent element.</p>
+	<div class="child">
+	<p>This is the child element.</p>
+	</div>
+	<p>This is the parent element.</p>
+	</div>
+	</body>
+	</html>
+
+
+<div class="">
+	<img src="images/posrel.png"  alt="Relative Positionierung" />
+</div>
+
+---
+Positionierung: Absolut 
+---------------------------------
+.fx: column2
+
+	!html
+	<html>
+	<head>
+	<title>Absolute Positioning 1</title>
+	<style>
+	.parent {
+	background: #999;
+	}
+	.child {
+	position: absolute;
+	top: 20px;
+	left: 40px;
+	background: #ccc;
+	}
+	</style>
+	</head>
+	<body>
+	<div class="parent">
+	<p>This is the parent element.</p>
+	<div class="child">
+	<p>This is the child element.</p>
+	</div>
+	<p>This is the parent element.</p>
+	</div>
+	</body>
+	</html>
+
+
+
+<div class="">
+	<img src="images/posabs1.png"  alt="Absolute Positionierung" />
+</div>
+
+---
+Positionierung: Absolut #2
+---------------------------------
+
+.fx: column2
+
+	!html
+	<html>
+	<head>
+	<title>Absolute Positioning 2</title>
+	<style>
+	.parent {
+	position: relative;
+	background: #999;
+	}
+	.child {
+	position: absolute;
+	top: 20px;
+	left: 40px;
+	background: #ccc;
+	}
+	</style>
+	</head>
+	<body>
+	<div class="parent">
+	<p>This is the parent element.</p>
+	<div class="child">
+	<p>This is the child element.</p>
+	</div>
+	<p>This is the parent element.</p>
+	</div>
+	</body>
+	</html>
+
+
+<div class="">
+	<img src="images/posabs2.png"  alt="Absolute Positionierung 2" />
+</div>
 
 
 ---
@@ -277,9 +386,193 @@ Beide Varianten ermöglichen keine Anpassung an Smartphones/Tablets!!
 
 
 ---
-Layout Best-Practise
+Layout: Elemente nebeneinander
 ------------------------------
 
-TODO
+## Simples 2 Spalten Layout
+Block-Elemente werden mittels **width**, **float** und **margin** als unabhängige Boxen untereinander oder nebeneinander angeordnet.
+
+## Beispiel: Zwei Elemente nebeneinander:
+
+	!html
+	<div>Dies ist eine Box mit Text</div>
+	<div>Eine zweite Box mit Text</div>
+	<hr>
+	<div style="float: left;  border: 2px solid;">Dies ist eine Box mit Text</div>
+	<div style="float: left;  border:2px solid;">Eine zweite Box mit Text</div>
+
+<div class="demo" style="width: 100%">
+	<div>Dies ist eine Box mit Text</div>
+	<div>Eine zweite Box mit Text</div>
+	<hr>
+	<div style="float: left;  border: 2px solid;">Dies ist eine Box mit Text</div>
+	<div style="float: left;  border:2px solid;">Eine zweite Box mit Text</div>
+	<span style="clear: both;">&nbsp;</span>
+</div>
+---
+Layout: 2 Spalten
+------------------
+
+Problem: Eine Box feste größe, andere Box rest des Bildschirms
+
+	!html
+	<div style="float: left;  width: 250px; border: 2px solid;">
+	Dies ist eine Box mit Text</div>
+	<div style="margin-left: 252px; border:2px solid; min-height: 300px;">
+	Eine zweite Box mit Text</div>
+
+<div class="demo" style="clear: both;">
+	<div style="float: left;  width: 250px; border: 2px solid;"><ul><li>Menüpunkt 1</li><li>Menüpunkt 2</li><li>Menüpunkt 3</li><li>Menüpunkt 4</li></ul></div>
+	<div style="margin-left: 255px; border:2px solid; min-height: 300px;">Eine zweite Box mit Text</div>
+</div>
+
+Achtung: Margin wirkt nur bei nicht-float!
+
+---
+3 Spalten Layout
+------------------------
+
+	!html
+	<h1>Überschrift</h1>
+	<ul id="navigation">...</ul>
+	<div id="info">...</div>
+	<div id="inhalt">...</div>
+	<div id="footer">Fußzeile</div>
+
+[4] (Reihenfolge von außen nach innen)
+
+CSS:
+
+	!css
+	#navigation {
+		float:left;
+		width:150px;
+	}
+	#info {
+		float:right;
+		width:150px;
+	}
+	#inhalt {
+		margin:0px 160px; /* link und rechts 160px */
+	}
+	#footer {
+		clear:both;
+	}
+
+---
+Dreispaltiges Layout
+--------------------
+
+
+<style type="text/css">
+#navigation li {
+font-size: 12px;
+padding: 0;
+margin: 0;
+}
+#navigation {
+padding: 0;
+margin: 0;
+float:left;
+width:150px;background-color:lightpink;}
+#info {
+float:right;
+width:150px;background-color:lightcyan;}
+#inhalt {
+margin:0px 160px;background-color:lightyellow;}
+#footer {
+clear:both;background-color: lightgreen;}
+.demo h1 {
+background-color: lightblue;
+}
+</style>
+
+
+<div class="demo">
+<h1>Überschrift</h1>
+<ul id="navigation">
+	<li>Menüpunkt 1</li>
+	<li>Menüpunkt 2</li>
+	<li>Menüpunkt 3</li>
+	<li>Menüpunkt 4</li>
+</ul>
+<div id="info">Infobox</div>
+<div id="inhalt">Etwas Inhalt <br>lala</div>
+<div id="footer">Fußzeile</div>
+</div>
+
+
+### Probleme
+- Keine gleichmäßige Höhe
+- Feste Größenangaben
+
+
+---
+Layout-Templates
+----------------
+
+* <a href="http://www.noupe.com/css/9-timeless-3-column-layout-techniques.html">9 Timeless 3 Column Layout Techniques</a>
+* <a href="http://matthewjamestaylor.com/blog/perfect-3-column.htm">The Perfect 3 Column Liquid Layout</a> <br>No CSS hacks. SEO friendly. No Images. No JavaScript. Cross-browser & iPhone compatible.
+
+Layout Frameworks:
+
+* <a href="http://960.gs/">960 Grid System</a> 
+* <a href="blueprintcss.org">Blueprint</a> 
+* <a href="http://yaml.de">YAML: Yet Another Multicolumn Layout</a> Ein (X)HTML/CSS Framework (ACHTUNG: Lizenz)
+* <a href="http://www.noupe.com/css/5-popular-css-frameworks-tutorials-tools-for-getting-started.html">5 Popular CSS Frameworks - Getting Started</a>
+
+### <a href="http://www.highresolution.info/spotlight/entry/was_sie_ueber_css-frameworks_wissen_sollten/">Was Sie über CSS-Frameworks wissen sollten!</a>
+
+### ACHTUNG: Die Frameworks dürfen im Projekt nicht verwendet werden! Simple Templates hingegen schon, ihr solltet allerdings verstehen was diese bewirken! (Wird u. U. abgeprüft in der mündlichen Prüfung)!
+
+---
+Navigationsleisten
+------------------
+
+	!html
+	<ul id="navigation">
+		<li>Menüpunkt
+			<ul><li>Unterpunkt</li></ul>
+		</li>
+	</ul>
+
+CSS:
+
+	!css
+	#navigation li {
+		list-style:none;
+	}
+
+	#navigation li ul {
+	margin:0px 0px 0px 20px;
+	font-size:0.8em;
+	display:none;  /* Unterpunkte werden zunächst nicht angezeigt */
+	}
+
+	#navigation li:hover ul {
+	display:block; /* Unterpunkte werden angezeigt */
+	}
+
+---
+Navigationsleisten: Horizontal
+------------------------------
+
+### Horizontale Navigationsleisten
+
+	!css
+	#navigation li {
+		float:left;			/* bewirkt horizontale Anordnung */
+		position: relative; /*ermöglicht Positionierung der Unterpunkte*/
+	} 
+
+	#navigation +div {
+		clear:left; /* Aufhebung des Umflusses am Ende der Navigationsleiste*/
+	}
+
+	#navigation li ul {
+		position:absolute; 	/* Positionierung der Unterpunkte relativ zum Oberpunkt */
+		top:10px;
+		left:0px;
+	}
 
 
