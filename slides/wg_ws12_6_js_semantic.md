@@ -2,12 +2,6 @@ HTML & Semantik
 ===============
 
 ---
-Links
------
-
-TODO: Lang, accesskey etc. [???]
-
----
 HTML-Kopfdaten
 ------
 Meta-Angaben: Optional seit HTML 4.0 (zukünftig mittels RDF)
@@ -107,19 +101,59 @@ Darstellung der Abhängigkeiten zu anderen Dateien
 Dublin Core Metadata Initiative
 --------------------------------
 
-TODO: DC
+	!html
+	<head profile="http://dublincore.org/documents/dcq-html/">
+	  <title>Dublin Core</title>
+	  <link rel="schema.DC"      href="http://purl.org/dc/elements/1.1/" />
+	  <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	  <meta name="DC.format"        scheme="DCTERMS.IMT"      content="text/html" />
+	  <meta name="DC.type"          scheme="DCTERMS.DCMIType" content="Text" />
+	  <meta name="DC.publisher"     content="Jimmy Wales" />
+	  <meta name="DC.subject"       content="Dublin Core Metadaten-Elemente, Anwendungen" />
+	  <meta name="DC.creator"       content="Björn G. Kulms" />
+	  <meta name="DCTERMS.license"  scheme="DCTERMS.URI" content="http://www.gnu.org/copyleft/fdl.html" />
+	  <meta name="DCTERMS.rightsHolder" content="Wikimedia Foundation Inc." />
+	  <meta name="DCTERMS.modified" scheme="DCTERMS.W3CDTF" content="2006-03-08" />
+	</head>
 
----
-HTML5 Metadata
----------------
+### <a href="http://de.wikipedia.org/wiki/Dublin_Core">WP: Dublin Core</a>
 
-TODO: HTML5
 
 ---
 Microformats Metadata
 ---------------
 
-TODO: Microformats
+	!html
+	<div class="vevent" id="hcalendar-Webgrundtechnik-Semantik-Vorlesung">
+	<a class="url" href="http://elearning.hs-weingarten.de">
+	<abbr class="dtstart" title="2011-12-05T14:15+01:0000">
+	December 5, 2011 2:15</abbr> – <abbr class="dtend" 
+	title="2011-12-05T15:45+01:00">3:45pm</abbr> :  
+	<span class="summary">Webgrundtechnik Semantik Vorlesung</span> at 
+	<span class="location">H061</span></a><div class="description">
+	This is a lecture about the basic web concepts!</div>
+	<div class="tags">Tags: <a rel="tag" href="http://eventful.com/events/tags/web">
+	web</a><a rel="tag" href="http://eventful.com/events/tags/html"> html</a>
+	<a rel="tag" href="http://eventful.com/events/tags/js"> js</a>
+	</div>
+	<p style="font-size: smaller; ">This <a 
+	href="http://microformats.org/wiki/hcalendar">hCalendar event</a> brought 
+	to you by the <a href="http://microformats.org/code/hcalendar/creator">
+	hCalendar Creator</a>.</p></div>
+
+<div class="demo">
+<div class="vevent" id="hcalendar-Webgrundtechnik-Semantik-Vorlesung"><a class="url" href="http://elearning.hs-weingarten.de"><abbr class="dtstart" title="2011-12-05T14:15+01:0000">December 5, 2011 2:15</abbr> – <abbr class="dtend" title="2011-12-05T15:45+01:00">3:45pm</abbr> : <span class="summary">Webgrundtechnik Semantik Vorlesung</span> at <span class="location">H061</span></a><div class="description">This is a lecture about the basic web concepts!</div><div class="tags">Tags: <a rel="tag" href="http://eventful.com/events/tags/web">web</a><a rel="tag" href="http://eventful.com/events/tags/html"> html</a><a rel="tag" href="http://eventful.com/events/tags/js"> js</a></div> <p style="font-size: smaller; ">This <a href="http://microformats.org/wiki/hcalendar">hCalendar event</a> brought to you by the <a href="http://microformats.org/code/hcalendar/creator">hCalendar Creator</a>.</p></div>
+</div>
+
+### <a href="http://http://microformats.org/">Microformats.org</a>
+
+---
+HTML5 Metadata
+---------------
+
+- Zusammenfügen bisher nicht oder extern standardisierter Meta Angaben
+
+### Vorgeschlagene <a href="http://wiki.whatwg.org/wiki/MetaExtensions">HTML5 Meta Extensions</a>
 
 ---
 Java Script
@@ -585,9 +619,10 @@ PHP als Frame Ersatz Variante 2
 	<?php include('footer.php'); ?>
 
 Problem: Titel einer Seite etc.
-Lösung: Variablen; `<?php $subtitle = “Impressum“; ?>`
+Lösung: Variablen
 
-
+	!php
+	<?php $subtitle = "Impressum"; ?>
 
 
 
