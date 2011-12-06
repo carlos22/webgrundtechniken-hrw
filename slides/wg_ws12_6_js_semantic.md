@@ -14,7 +14,10 @@ Meta-Angaben: Optional seit HTML 4.0 (zukünftig mittels RDF)
 ### Angaben für Web-Server (heute Auswertung meist erst durch Browser)
 
 	!html
+	<!-- HTML4 -->
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<!-- HTML5 -->
+	<meta charset="UTF-8">
 
 
 Meta-Angaben für heutige Suchmaschinen von geringer Bedeutung (aufgrund von Missbrauch)
