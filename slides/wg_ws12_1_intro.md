@@ -5,7 +5,7 @@ Webgrundtechniken
 <div style="height: 6em"></div>
 <div style="margin-left: 2.5em">
 
-### Wintersemester 2011/2012
+### Sommersemester 2012
 ### LV 4051
 
 ### Bachelorstudiengang: Wirtschaftsinformatik / WI Plus
@@ -18,7 +18,7 @@ Webgrundtechniken
 <span style="font-size: small" class="noprint">Drücken Sie `h` für eine Anzeige der Funktionen dieser Präsentation.</span>
 
 
-<a href="http://github.com/carlos22/Webgrundtechniken-WS11-12/raw/master/slides/WebGrundtechniken_WS1112_Slides.pdf">PDF Version</a> | <a href="http://carlos22.github.com/Webgrundtechniken-WS11-12/">HTML5 Version</a>
+<a href="http://github.com/carlos22/webgrundtechniken-hrw/raw/master/slides/WebGrundtechniken_Slides.pdf">PDF Version</a> | <a href="http://carlos22.github.com/webgrundtechniken-hrw/">HTML5 Version</a>
 
 <div style="height: 3em"></div>
 <span style="font-size: x-small">Teile der Präsentation basieren auf Arbeiten von Dr. Stefan Müller</span>
@@ -45,34 +45,14 @@ Lernziele
 Organisation
 ------------
 
-- Vorlesung Montags 14:15 in H061
-- Übungen, Montags 14:15 in V206/V208 (zwei Räume paralell!)
-	- Übungsaufgaben sind Pflicht! (mindestens 80%)
-	- Testate durch Tutoren
+- Blockveranstaltung: 27. 29.02.2012 (jeweils 9:00 - 17:00 Uhr)
 - Prüfungsleistung: Praktische Arbeit
-	- Durchführung eines umfangreicheren <b>Web-Projekts</b> (in 2-3er Gruppen)
+	- Durchführung eines umfangreicheren <b>Web-Projekts</b> (in 3er Gruppen!)
 		- Erstellung einer Web-Präsentation für eine Firma, ein Projekt, Verein etc. (fiktiv oder real)
-		- Beginn: 28.11.2011 (spätestens)
-		- Meilenstein 1: 18.12.2011 / Meilenstein 2: 8.01.2012
-		- Finale Präsentation des Projekts (mündliche Prüfungsleistung): <br>23.01.2012 / 30.01.2012
-
----
-
-Kalender
-------------
-<div id='loading' style='display:none'>loading...</div>
-<div id='calendar'></div>
-
-.fx: noprint
-
----
-
-Kalender Download
---------
-
-<a href="https://www.google.com/calendar/ical/deqv6p7psqdabhbuhtgkh4ubfs%40group.calendar.google.com/public/basic.ics">Kalender als iCal-Link</a>
-
-.qr: 400|https://www.google.com/calendar/ical/deqv6p7psqdabhbuhtgkh4ubfs%40group.calendar.google.com/public/basic.ics
+		- Beginn: 29.02.2012
+		- Meilenstein 1: 15.05.2012 / Meilenstein 2: 25.05.2012
+		- Finale Abgabe:  
+		  01.06.2012
 
 ---
 
