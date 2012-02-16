@@ -369,11 +369,11 @@ Formularfelder: Buttons
 
 	!html
 	<button type="button" name="Button" value="hier klicken" onclick="alert('Bravo')">
-	<img src="http://blog.radiobob.de/wp-content/uploads/2008/08/applaus.jpg" 
+	<img src="images/applaus.jpg" 
 	width="100" height="70"	alt="Applaus"><br>Spitze</button>
 
 <div class="demo">
-<button type="button" name="Button" value="hier klicken" onclick="alert('Bravo')"><img src="http://blog.radiobob.de/wp-content/uploads/2008/08/applaus.jpg" width="100" height="70" alt="Applaus"><br>Spitze</button>
+<button type="button" name="Button" value="hier klicken" onclick="alert('Bravo')"><img src="images/applaus.jpg" width="100" height="70" alt="Applaus"><br>Spitze</button>
 </div>
 
 ---
