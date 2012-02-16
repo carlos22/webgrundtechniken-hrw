@@ -45,14 +45,14 @@ Lernziele
 Organisation
 ------------
 
-- Blockveranstaltung: 27. 29.02.2012 (jeweils 9:00 - 17:00 Uhr)
+- Blockveranstaltung: 27. - 29.02.2012 (jeweils 9:00 - 17:00 Uhr)
 - Prüfungsleistung: Praktische Arbeit
 	- Durchführung eines umfangreicheren <b>Web-Projekts</b> (in 3er Gruppen!)
 		- Erstellung einer Web-Präsentation für eine Firma, ein Projekt, Verein etc. (fiktiv oder real)
 		- Beginn: 29.02.2012
-		- Meilenstein 1: 15.05.2012 / Meilenstein 2: 25.05.2012
-		- Finale Abgabe:  
-		  01.06.2012
+		- Meilenstein 1: Do 10.05.2012
+		- Meilenstein 2: Do 24.05.2012
+		- *Finale Abgabe: Fr 01.06.2012*
 
 ---
 

@@ -1,3 +1,7 @@
+.html5 section {
+  background-image: url(images/html5bg.svg);
+}
+
 HTML Tabellen
 ----
 
