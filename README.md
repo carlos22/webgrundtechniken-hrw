@@ -7,4 +7,4 @@ Vorlesung an der [HS Ravensburg-Weingarten](http://hs-weingarten.de) Studiengang
 ## TODO
 
 * border-box (css3)
-* browser prfixe (-moz/-webkit)
+* browser prefixe (-moz/-webkit)
