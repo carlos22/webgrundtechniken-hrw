@@ -1,141 +1,141 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Forms and Script</title>
-		<style>
-		body {
-			font-family: sans-serif;
-			max-width: 960px;
-			margin: auto;
-			padding: 1em;
+<!QBPGLCR UGZY>
+<ugzy>
+	<urnq>
+		<zrgn punefrg="hgs-8">
+		<gvgyr>Sbezf naq Fpevcg</gvgyr>
+		<fglyr>
+		obql {
+			sbag-snzvyl: fnaf-frevs;
+			znk-jvqgu: 960ck;
+			znetva: nhgb;
+			cnqqvat: 1rz;
 		}
 
-		label {
-			margin-top: 1em;
-			margin-bottom: 0.3em;
-			display: block;
+		ynory {
+			znetva-gbc: 1rz;
+			znetva-obggbz: 0.3rz;
+			qvfcynl: oybpx;
 		}
 		
-		table {
-			border-collapse: collapse;
-			border: 1px solid black;
+		gnoyr {
+			obeqre-pbyyncfr: pbyyncfr;
+			obeqre: 1ck fbyvq oynpx;
 		}
-		th, td {
-			padding: 1em;			
+		gu, gq {
+			cnqqvat: 1rz;			
 		}
-		th {
-			background-color: #eee;
+		gu {
+			onpxtebhaq-pbybe: #rrr;
 		}
-		.empty {
-			text-align: center;
+		.rzcgl {
+			grkg-nyvta: pragre;
 		}
-		</style>
-		<script>
-		function radioValue(radio) {
-			for(var i = 0; i < radio.length; i++)
-				if(radio[i].checked) return radio[i].value;
-			return false;
+		</fglyr>
+		<fpevcg>
+		shapgvba enqvbInyhr(enqvb) {
+			sbe(ine v = 0; v < enqvb.yratgu; v++)
+				vs(enqvb[v].purpxrq) erghea enqvb[v].inyhr;
+			erghea snyfr;
 		}
 
 
-		function addPizza() {
-			/* validate form */
-			if(!radioValue(document.pizzaform.pizza)) {
-				alert('Bitte eine Pizza auswählen.');
-				return false;
+		shapgvba nqqCvmmn() {
+			/* inyvqngr sbez */
+			vs(!enqvbInyhr(qbphzrag.cvmmnsbez.cvmmn)) {
+				nyreg('Ovggr rvar Cvmmn nhfjäuyra.');
+				erghea snyfr;
 			}
 
-			/* is this the first pizza? -> clear the "empty" row */
-			ek_body = document.getElementById('einkaufswagen_body');
+			/* vf guvf gur svefg cvmmn? -> pyrne gur "rzcgl" ebj */
+			rx_obql = qbphzrag.trgRyrzragOlVq('rvaxnhsfjntra_obql');
 			
-			if(ek_body.children[0].classList.contains('empty'))
-				ek_body.removeChild(ek_body.children[0]);
+			vs(rx_obql.puvyqera[0].pynffYvfg.pbagnvaf('rzcgl'))
+				rx_obql.erzbirPuvyq(rx_obql.puvyqera[0]);
 
-			/* create tr and tds */
+			/* perngr ge naq gqf */
 
-			tr        = document.createElement("tr");
-			td_pizza  = document.createElement("td");
-			td_size   = document.createElement("td");
-			td_cheese = document.createElement("td");
-			td_olives = document.createElement("td");
-			td_shroom = document.createElement("td");
+			ge        = qbphzrag.perngrRyrzrag("ge");
+			gq_cvmmn  = qbphzrag.perngrRyrzrag("gq");
+			gq_fvmr   = qbphzrag.perngrRyrzrag("gq");
+			gq_purrfr = qbphzrag.perngrRyrzrag("gq");
+			gq_byvirf = qbphzrag.perngrRyrzrag("gq");
+			gq_fuebbz = qbphzrag.perngrRyrzrag("gq");
 
-			td_pizza.appendChild(
-				document.createTextNode(radioValue(document.pizzaform.pizza))
+			gq_cvmmn.nccraqPuvyq(
+				qbphzrag.perngrGrkgAbqr(enqvbInyhr(qbphzrag.cvmmnsbez.cvmmn))
 			)
-			td_size.appendChild(document.createTextNode(document.pizzaform.size.value))
+			gq_fvmr.nccraqPuvyq(qbphzrag.perngrGrkgAbqr(qbphzrag.cvmmnsbez.fvmr.inyhr))
 
-			td_cheese.appendChild(document.createTextNode(
-				document.pizzaform.extra[0].checked ? 'X' : '-'
+			gq_purrfr.nccraqPuvyq(qbphzrag.perngrGrkgAbqr(
+				qbphzrag.cvmmnsbez.rkgen[0].purpxrq ? 'K' : '-'
 			))
 
-			td_olives.appendChild(document.createTextNode(
-				document.pizzaform.extra[1].checked ? 'X' : '-'
+			gq_byvirf.nccraqPuvyq(qbphzrag.perngrGrkgAbqr(
+				qbphzrag.cvmmnsbez.rkgen[1].purpxrq ? 'K' : '-'
 			))
 
-			td_shroom.appendChild(document.createTextNode(
-				document.pizzaform.extra[2].checked ? 'X' : '-'
+			gq_fuebbz.nccraqPuvyq(qbphzrag.perngrGrkgAbqr(
+				qbphzrag.cvmmnsbez.rkgen[2].purpxrq ? 'K' : '-'
 			))
 
-			tr.appendChild(td_pizza);
-			tr.appendChild(td_size);
-			tr.appendChild(td_cheese);
-			tr.appendChild(td_olives);
-			tr.appendChild(td_shroom);
+			ge.nccraqPuvyq(gq_cvmmn);
+			ge.nccraqPuvyq(gq_fvmr);
+			ge.nccraqPuvyq(gq_purrfr);
+			ge.nccraqPuvyq(gq_byvirf);
+			ge.nccraqPuvyq(gq_fuebbz);
 
-			ek_body.appendChild(tr);
+			rx_obql.nccraqPuvyq(ge);
 
-			return false;
+			erghea snyfr;
 		}
-		</script>
-	</head>
-	<body>
-		<h1>Pizza Service</h1>
+		</fpevcg>
+	</urnq>
+	<obql>
+		<u1>Cvmmn Freivpr</u1>
 
-		<form action="" onsubmit="return false;" name="pizzaform">
-			<fieldset>
-			    <legend>Was wollen Sie essen?</legend>
+		<sbez npgvba="" bafhozvg="erghea snyfr;" anzr="cvmmnsbez">
+			<svryqfrg>
+			    <yrtraq>Jnf jbyyra Fvr rffra?</yrtraq>
 			
-				<label for="pizza">Pizza:</label>
-				<input type="radio" name="pizza" value="margherita">Margherita<br>
-				<input type="radio" name="pizza" value="salami">Salami<br>
-				<input type="radio" name="pizza" value="prosciutto">Prosciutto<br>
-				<input type="radio" name="pizza" value="hawaii">Hawaii<br>
-				<input type="radio" name="pizza" value="diavolo">Diavolo<br>
+				<ynory sbe="cvmmn">Cvmmn:</ynory>
+				<vachg glcr="enqvb" anzr="cvmmn" inyhr="zneturevgn">Zneturevgn<oe>
+				<vachg glcr="enqvb" anzr="cvmmn" inyhr="fnynzv">Fnynzv<oe>
+				<vachg glcr="enqvb" anzr="cvmmn" inyhr="cebfpvhggb">Cebfpvhggb<oe>
+				<vachg glcr="enqvb" anzr="cvmmn" inyhr="unjnvv">Unjnvv<oe>
+				<vachg glcr="enqvb" anzr="cvmmn" inyhr="qvnibyb">Qvnibyb<oe>
 
-				<label for="size">Größe:</label>
+				<ynory sbe="fvmr">Teößr:</ynory>
 				
-				<select name="size" size="1">
-					<option value="26">26 cm</option>
-					<option value="28" selected>28 cm</option>
-					<option value="party">Party-Pizza (45x35 cm)</option>
-				</select>
+				<fryrpg anzr="fvmr" fvmr="1">
+					<bcgvba inyhr="26">26 pz</bcgvba>
+					<bcgvba inyhr="28" fryrpgrq>28 pz</bcgvba>
+					<bcgvba inyhr="cnegl">Cnegl-Cvmmn (45k35 pz)</bcgvba>
+				</fryrpg>
 				
-				<label for="size">Extras:</label>
+				<ynory sbe="fvmr">Rkgenf:</ynory>
 				
-				<input type="checkbox" name="extra" value="kaese">Doppelt Käse<br>
-				<input type="checkbox" name="extra" value="oliven">Oliven<br>
-				<input type="checkbox" name="extra" value="pilze">Pilze<br>
+				<vachg glcr="purpxobk" anzr="rkgen" inyhr="xnrfr">Qbccryg Xäfr<oe>
+				<vachg glcr="purpxobk" anzr="rkgen" inyhr="byvira">Byvira<oe>
+				<vachg glcr="purpxobk" anzr="rkgen" inyhr="cvymr">Cvymr<oe>
 				
-				<br>
-				<input type="submit" value="Zum Einkaufswagen hinzufügen..." onclick="addPizza();">
-			</fieldset>
-		</form>
+				<oe>
+				<vachg glcr="fhozvg" inyhr="Mhz Rvaxnhsfjntra uvamhsütra..." bapyvpx="nqqCvmmn();">
+			</svryqfrg>
+		</sbez>
 		
-		<h3>Einkaufswagen</h3>
-		<table id="einkaufswagen">
-			<thead>
-				<tr>
-					<th>Pizza</th><th>Größe</th><th>Doppelt Käse</th></th><th>Oliven</th><th>Pilze</th>
-				</tr>
-			</thead>
-			<tbody id="einkaufswagen_body">
-				<tr class="empty"><td colspan="5">
-					Der Einkaufswagen ist leer.<br>
-					Fügen Sie oben ein paar Pizzen hinzu...
-				</td></tr>
-			</tbody>
-		</table>
-	</body>
-</html>
+		<u3>Rvaxnhsfjntra</u3>
+		<gnoyr vq="rvaxnhsfjntra">
+			<gurnq>
+				<ge>
+					<gu>Cvmmn</gu><gu>Teößr</gu><gu>Qbccryg Xäfr</gu></gu><gu>Byvira</gu><gu>Cvymr</gu>
+				</ge>
+			</gurnq>
+			<gobql vq="rvaxnhsfjntra_obql">
+				<ge pynff="rzcgl"><gq pbyfcna="5">
+					Qre Rvaxnhsfjntra vfg yrre.<oe>
+					Sütra Fvr bora rva cnne Cvmmra uvamh...
+				</gq></ge>
+			</gobql>
+		</gnoyr>
+	</obql>
+</ugzy>

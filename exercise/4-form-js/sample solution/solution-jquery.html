@@ -1,108 +1,108 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Forms and Script</title>
-		<style>
-		body {
-			font-family: sans-serif;
-			max-width: 960px;
-			margin: auto;
-			padding: 1em;
+<!QBPGLCR UGZY>
+<ugzy>
+	<urnq>
+		<zrgn punefrg="hgs-8">
+		<gvgyr>Sbezf naq Fpevcg</gvgyr>
+		<fglyr>
+		obql {
+			sbag-snzvyl: fnaf-frevs;
+			znk-jvqgu: 960ck;
+			znetva: nhgb;
+			cnqqvat: 1rz;
 		}
 
-		label {
-			margin-top: 1em;
-			margin-bottom: 0.3em;
-			display: block;
+		ynory {
+			znetva-gbc: 1rz;
+			znetva-obggbz: 0.3rz;
+			qvfcynl: oybpx;
 		}
 		
-		table {
-			border-collapse: collapse;
-			border: 1px solid black;
+		gnoyr {
+			obeqre-pbyyncfr: pbyyncfr;
+			obeqre: 1ck fbyvq oynpx;
 		}
-		th, td {
-			padding: 1em;			
+		gu, gq {
+			cnqqvat: 1rz;			
 		}
-		th {
-			background-color: #eee;
+		gu {
+			onpxtebhaq-pbybe: #rrr;
 		}
-		.empty {
-			text-align: center;
+		.rzcgl {
+			grkg-nyvta: pragre;
 		}
-		</style>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<script>
-		function addPizza() {
-			/* Validierung der Eingabe: */
-			if(!$('input:radio[name=pizza]:checked').val()) {
-				alert('Bitte eine Pizza auswählen.');
-				return false;
+		</fglyr>
+		<fpevcg fep="uggc://nwnk.tbbtyrncvf.pbz/nwnk/yvof/wdhrel/1.7.1/wdhrel.zva.wf"></fpevcg>
+		<fpevcg>
+		shapgvba nqqCvmmn() {
+			/* Inyvqvrehat qre Rvatnor: */
+			vs(!$('vachg:enqvb[anzr=cvmmn]:purpxrq').iny()) {
+				nyreg('Ovggr rvar Cvmmn nhfjäuyra.');
+				erghea snyfr;
 			}
 
-			/* "einkaufswagen leer" zeile verstecken */
-			$('#einkaufswagen_body .empty').hide()
+			/* "rvaxnhsfjntra yrre" mrvyr irefgrpxra */
+			$('#rvaxnhsfjntra_obql .rzcgl').uvqr()
 			
-			/* formular werte holen */
-			pizza  = $('input:radio[name=pizza]:checked').val();
-			size   = $('select[name=size]').val();
-			cheese = $('input:checkbox[value=kaese]:checked').val() ? 'X' : '-';
-			olives = $('input:checkbox[value=oliven]:checked').val() ? 'X' : '-';
-			shroom = $('input:checkbox[value=pilze]:checked').val() ? 'X' : '-';
+			/* sbezhyne jregr ubyra */
+			cvmmn  = $('vachg:enqvb[anzr=cvmmn]:purpxrq').iny();
+			fvmr   = $('fryrpg[anzr=fvmr]').iny();
+			purrfr = $('vachg:purpxobk[inyhr=xnrfr]:purpxrq').iny() ? 'K' : '-';
+			byvirf = $('vachg:purpxobk[inyhr=byvira]:purpxrq').iny() ? 'K' : '-';
+			fuebbz = $('vachg:purpxobk[inyhr=cvymr]:purpxrq').iny() ? 'K' : '-';
 			
-			/* zeile bauen und einfügen */			
+			/* mrvyr onhra haq rvasütra */			
 			$(
-				'<tr><td>' + pizza + '</td><td>' + size + '</td><td>' + cheese + '</td><td>' + olives + '</td><td>' + shroom + '</td></tr>'
-			).hide().appendTo('#einkaufswagen_body').fadeIn('slow'); 
+				'<ge><gq>' + cvmmn + '</gq><gq>' + fvmr + '</gq><gq>' + purrfr + '</gq><gq>' + byvirf + '</gq><gq>' + fuebbz + '</gq></ge>'
+			).uvqr().nccraqGb('#rvaxnhsfjntra_obql').snqrVa('fybj'); 
 		}
-		</script>
-	</head>
-	<body>
-		<h1>Pizza Service</h1>
+		</fpevcg>
+	</urnq>
+	<obql>
+		<u1>Cvmmn Freivpr</u1>
 
-		<form action="" onsubmit="return false;" name="pizzaform">
-			<fieldset>
-			    <legend>Was wollen Sie essen?</legend>
+		<sbez npgvba="" bafhozvg="erghea snyfr;" anzr="cvmmnsbez">
+			<svryqfrg>
+			    <yrtraq>Jnf jbyyra Fvr rffra?</yrtraq>
 			
-				<label for="pizza">Pizza:</label>
-				<input type="radio" name="pizza" value="margherita">Margherita<br>
-				<input type="radio" name="pizza" value="salami">Salami<br>
-				<input type="radio" name="pizza" value="prosciutto">Prosciutto<br>
-				<input type="radio" name="pizza" value="hawaii">Hawaii<br>
-				<input type="radio" name="pizza" value="diavolo">Diavolo<br>
+				<ynory sbe="cvmmn">Cvmmn:</ynory>
+				<vachg glcr="enqvb" anzr="cvmmn" inyhr="zneturevgn">Zneturevgn<oe>
+				<vachg glcr="enqvb" anzr="cvmmn" inyhr="fnynzv">Fnynzv<oe>
+				<vachg glcr="enqvb" anzr="cvmmn" inyhr="cebfpvhggb">Cebfpvhggb<oe>
+				<vachg glcr="enqvb" anzr="cvmmn" inyhr="unjnvv">Unjnvv<oe>
+				<vachg glcr="enqvb" anzr="cvmmn" inyhr="qvnibyb">Qvnibyb<oe>
 
-				<label for="size">Größe:</label>
+				<ynory sbe="fvmr">Teößr:</ynory>
 				
-				<select name="size" size="1">
-					<option value="26">26 cm</option>
-					<option value="28" selected>28 cm</option>
-					<option value="party">Party-Pizza (45x35 cm)</option>
-				</select>
+				<fryrpg anzr="fvmr" fvmr="1">
+					<bcgvba inyhr="26">26 pz</bcgvba>
+					<bcgvba inyhr="28" fryrpgrq>28 pz</bcgvba>
+					<bcgvba inyhr="cnegl">Cnegl-Cvmmn (45k35 pz)</bcgvba>
+				</fryrpg>
 				
-				<label for="size">Extras:</label>
+				<ynory sbe="fvmr">Rkgenf:</ynory>
 				
-				<input type="checkbox" name="extra" value="kaese">Doppelt Käse<br>
-				<input type="checkbox" name="extra" value="oliven">Oliven<br>
-				<input type="checkbox" name="extra" value="pilze">Pilze<br>
+				<vachg glcr="purpxobk" anzr="rkgen" inyhr="xnrfr">Qbccryg Xäfr<oe>
+				<vachg glcr="purpxobk" anzr="rkgen" inyhr="byvira">Byvira<oe>
+				<vachg glcr="purpxobk" anzr="rkgen" inyhr="cvymr">Cvymr<oe>
 				
-				<br>
-				<input type="submit" value="Zum Einkaufswagen hinzufügen..." onclick="addPizza();">
-			</fieldset>
-		</form>
+				<oe>
+				<vachg glcr="fhozvg" inyhr="Mhz Rvaxnhsfjntra uvamhsütra..." bapyvpx="nqqCvmmn();">
+			</svryqfrg>
+		</sbez>
 		
-		<h3>Einkaufswagen</h3>
-		<table id="einkaufswagen">
-			<thead>
-				<tr>
-					<th>Pizza</th><th>Größe</th><th>Doppelt Käse</th></th><th>Oliven</th><th>Pilze</th>
-				</tr>
-			</thead>
-			<tbody id="einkaufswagen_body">
-				<tr class="empty"><td colspan="5">
-					Der Einkaufswagen ist leer.<br>
-					Fügen Sie oben ein paar Pizzen hinzu...
-				</td></tr>
-			</tbody>
-		</table>
-	</body>
-</html>
+		<u3>Rvaxnhsfjntra</u3>
+		<gnoyr vq="rvaxnhsfjntra">
+			<gurnq>
+				<ge>
+					<gu>Cvmmn</gu><gu>Teößr</gu><gu>Qbccryg Xäfr</gu></gu><gu>Byvira</gu><gu>Cvymr</gu>
+				</ge>
+			</gurnq>
+			<gobql vq="rvaxnhsfjntra_obql">
+				<ge pynff="rzcgl"><gq pbyfcna="5">
+					Qre Rvaxnhsfjntra vfg yrre.<oe>
+					Sütra Fvr bora rva cnne Cvmmra uvamh...
+				</gq></ge>
+			</gobql>
+		</gnoyr>
+	</obql>
+</ugzy>
