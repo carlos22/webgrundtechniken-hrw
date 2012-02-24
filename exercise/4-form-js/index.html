@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Forms and Script</title>
+		<style>
+		body {
+			font-family: sans-serif;
+			max-width: 960px;
+			margin: auto;
+			padding: 1em;
+		}
+
+		label {
+			margin-top: 1em;
+			margin-bottom: 0.3em;
+			display: block;
+		}
+		
+		table {
+			border-collapse: collapse;
+			border: 1px solid black;
+		}
+		th, td {
+			padding: 1em;			
+		}
+		th {
+			background-color: #eee;
+		}
+		.empty {
+			text-align: center;
+		}
+		</style>
+		<script>
+		function radioValue(radio) {
+			for(var i = 0; i < radio.length; i++)
+				if(radio[i].checked) return radio[i].value;
+			return false;
+		}
+		
+		
+		function addPizza() {
+			/* Validierung der Eingabe:
+			 * hier prüfen ob eine pizza gewählt wurde
+			 */
+			
+			
+			
+			/* einkaufswagen element holen */
+ 			ek_body = document.getElementById('einkaufswagen_body');
+
+			/* die erste pizza?
+			 * hat die erste <tr> von ek_body die Klasse "empty"
+			 * soll diese gelöscht werden
+			 */
+
+
+
+			/* Neue Zeile zur Tabelle hinzufügen:
+			 * - erstellen sie hier die Elemente und Text Knoten
+			 * - verschachteln sie diese entsprechend
+			 */
+			
+															
+			return false;
+		}
+		
+		</script>
+	</head>
+	<body>
+		<h1>Pizza Service</h1>
+
+		<form action="" onsubmit="return false;" name="pizzaform">
+			<!-- 
+			Fügen Sie hier den Code für Ihr Formular ein
+			-->
+		</form>
+		
+		<h3>Einkaufswagen</h3>
+		
+		<!--
+		Fügen Sie hier die Einkaufswagen-Tabelle ein
+		-->
+	</body>
+</html>

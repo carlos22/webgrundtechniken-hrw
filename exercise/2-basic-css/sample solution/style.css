@@ -1,0 +1,29 @@
+a {
+	color: #444;
+	font-weight: bold;
+}
+
+#about {
+	color: #034569;
+}
+
+#movies {
+	color: #8a0041;
+}
+
+#code {
+	color: #5c9900;
+}
+
+.whity {
+	background-color: #fff;
+	
+}
+
+hr + h2 {
+	text-decoration: underline;
+}
+
+ol li {
+	color: #f00;
+}

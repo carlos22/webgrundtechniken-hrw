@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Forms and Script</title>
+		<style>
+		body {
+			font-family: sans-serif;
+			max-width: 960px;
+			margin: auto;
+			padding: 1em;
+		}
+
+		label {
+			margin-top: 1em;
+			margin-bottom: 0.3em;
+			display: block;
+		}
+		
+		table {
+			border-collapse: collapse;
+			border: 1px solid black;
+		}
+		th, td {
+			padding: 1em;			
+		}
+		th {
+			background-color: #eee;
+		}
+		.empty {
+			text-align: center;
+		}
+		</style>
+		<script>
+		function radioValue(radio) {
+			for(var i = 0; i < radio.length; i++)
+				if(radio[i].checked) return radio[i].value;
+			return false;
+		}
+
+
+		function addPizza() {
+			/* validate form */
+			if(!radioValue(document.pizzaform.pizza)) {
+				alert('Bitte eine Pizza auswählen.');
+				return false;
+			}
+
+			/* is this the first pizza? -> clear the "empty" row */
+			ek_body = document.getElementById('einkaufswagen_body');
+			
+			if(ek_body.children[0].classList.contains('empty'))
+				ek_body.removeChild(ek_body.children[0]);
+
+			/* create tr and tds */
+
+			tr        = document.createElement("tr");
+			td_pizza  = document.createElement("td");
+			td_size   = document.createElement("td");
+			td_cheese = document.createElement("td");
+			td_olives = document.createElement("td");
+			td_shroom = document.createElement("td");
+
+			td_pizza.appendChild(
+				document.createTextNode(radioValue(document.pizzaform.pizza))
+			)
+			td_size.appendChild(document.createTextNode(document.pizzaform.size.value))
+
+			td_cheese.appendChild(document.createTextNode(
+				document.pizzaform.extra[0].checked ? 'X' : '-'
+			))
+
+			td_olives.appendChild(document.createTextNode(
+				document.pizzaform.extra[1].checked ? 'X' : '-'
+			))
+
+			td_shroom.appendChild(document.createTextNode(
+				document.pizzaform.extra[2].checked ? 'X' : '-'
+			))
+
+			tr.appendChild(td_pizza);
+			tr.appendChild(td_size);
+			tr.appendChild(td_cheese);
+			tr.appendChild(td_olives);
+			tr.appendChild(td_shroom);
+
+			ek_body.appendChild(tr);
+
+			return false;
+		}
+		</script>
+	</head>
+	<body>
+		<h1>Pizza Service</h1>
+
+		<form action="" onsubmit="return false;" name="pizzaform">
+			<fieldset>
+			    <legend>Was wollen Sie essen?</legend>
+			
+				<label for="pizza">Pizza:</label>
+				<input type="radio" name="pizza" value="margherita">Margherita<br>
+				<input type="radio" name="pizza" value="salami">Salami<br>
+				<input type="radio" name="pizza" value="prosciutto">Prosciutto<br>
+				<input type="radio" name="pizza" value="hawaii">Hawaii<br>
+				<input type="radio" name="pizza" value="diavolo">Diavolo<br>
+
+				<label for="size">Größe:</label>
+				
+				<select name="size" size="1">
+					<option value="26">26 cm</option>
+					<option value="28" selected>28 cm</option>
+					<option value="party">Party-Pizza (45x35 cm)</option>
+				</select>
+				
+				<label for="size">Extras:</label>
+				
+				<input type="checkbox" name="extra" value="kaese">Doppelt Käse<br>
+				<input type="checkbox" name="extra" value="oliven">Oliven<br>
+				<input type="checkbox" name="extra" value="pilze">Pilze<br>
+				
+				<br>
+				<input type="submit" value="Zum Einkaufswagen hinzufügen..." onclick="addPizza();">
+			</fieldset>
+		</form>
+		
+		<h3>Einkaufswagen</h3>
+		<table id="einkaufswagen">
+			<thead>
+				<tr>
+					<th>Pizza</th><th>Größe</th><th>Doppelt Käse</th></th><th>Oliven</th><th>Pilze</th>
+				</tr>
+			</thead>
+			<tbody id="einkaufswagen_body">
+				<tr class="empty"><td colspan="5">
+					Der Einkaufswagen ist leer.<br>
+					Fügen Sie oben ein paar Pizzen hinzu...
+				</td></tr>
+			</tbody>
+		</table>
+	</body>
+</html>

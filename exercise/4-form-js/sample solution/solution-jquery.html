@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Forms and Script</title>
+		<style>
+		body {
+			font-family: sans-serif;
+			max-width: 960px;
+			margin: auto;
+			padding: 1em;
+		}
+
+		label {
+			margin-top: 1em;
+			margin-bottom: 0.3em;
+			display: block;
+		}
+		
+		table {
+			border-collapse: collapse;
+			border: 1px solid black;
+		}
+		th, td {
+			padding: 1em;			
+		}
+		th {
+			background-color: #eee;
+		}
+		.empty {
+			text-align: center;
+		}
+		</style>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script>
+		function addPizza() {
+			/* Validierung der Eingabe: */
+			if(!$('input:radio[name=pizza]:checked').val()) {
+				alert('Bitte eine Pizza auswählen.');
+				return false;
+			}
+
+			/* "einkaufswagen leer" zeile verstecken */
+			$('#einkaufswagen_body .empty').hide()
+			
+			/* formular werte holen */
+			pizza  = $('input:radio[name=pizza]:checked').val();
+			size   = $('select[name=size]').val();
+			cheese = $('input:checkbox[value=kaese]:checked').val() ? 'X' : '-';
+			olives = $('input:checkbox[value=oliven]:checked').val() ? 'X' : '-';
+			shroom = $('input:checkbox[value=pilze]:checked').val() ? 'X' : '-';
+			
+			/* zeile bauen und einfügen */			
+			$(
+				'<tr><td>' + pizza + '</td><td>' + size + '</td><td>' + cheese + '</td><td>' + olives + '</td><td>' + shroom + '</td></tr>'
+			).hide().appendTo('#einkaufswagen_body').fadeIn('slow'); 
+		}
+		</script>
+	</head>
+	<body>
+		<h1>Pizza Service</h1>
+
+		<form action="" onsubmit="return false;" name="pizzaform">
+			<fieldset>
+			    <legend>Was wollen Sie essen?</legend>
+			
+				<label for="pizza">Pizza:</label>
+				<input type="radio" name="pizza" value="margherita">Margherita<br>
+				<input type="radio" name="pizza" value="salami">Salami<br>
+				<input type="radio" name="pizza" value="prosciutto">Prosciutto<br>
+				<input type="radio" name="pizza" value="hawaii">Hawaii<br>
+				<input type="radio" name="pizza" value="diavolo">Diavolo<br>
+
+				<label for="size">Größe:</label>
+				
+				<select name="size" size="1">
+					<option value="26">26 cm</option>
+					<option value="28" selected>28 cm</option>
+					<option value="party">Party-Pizza (45x35 cm)</option>
+				</select>
+				
+				<label for="size">Extras:</label>
+				
+				<input type="checkbox" name="extra" value="kaese">Doppelt Käse<br>
+				<input type="checkbox" name="extra" value="oliven">Oliven<br>
+				<input type="checkbox" name="extra" value="pilze">Pilze<br>
+				
+				<br>
+				<input type="submit" value="Zum Einkaufswagen hinzufügen..." onclick="addPizza();">
+			</fieldset>
+		</form>
+		
+		<h3>Einkaufswagen</h3>
+		<table id="einkaufswagen">
+			<thead>
+				<tr>
+					<th>Pizza</th><th>Größe</th><th>Doppelt Käse</th></th><th>Oliven</th><th>Pilze</th>
+				</tr>
+			</thead>
+			<tbody id="einkaufswagen_body">
+				<tr class="empty"><td colspan="5">
+					Der Einkaufswagen ist leer.<br>
+					Fügen Sie oben ein paar Pizzen hinzu...
+				</td></tr>
+			</tbody>
+		</table>
+	</body>
+</html>
