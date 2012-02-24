@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    margin: 10px 10px 10px 20px;
+}
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #aaa;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    padding: 0 3px 2px;
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px dashed #ccc;
+    border: 1px dashed rgba(0, 0, 0, 0.15);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fdfdfd;
+    color:#737373;
+    font-size: 11px;
+}
+@media screen and (min-width: 768px) {
+    body {
+        width: 748px;
+        margin:10px auto;
+    }
+}
+</style>
+<title>aufgabe2.html</title>
+</head>
+<body>
+<h1>Übung 2</h1>
+
+<h2>2.1 Inline CSS</h2>
+
+<p>Kopieren Sie Ihre HTML Datei aus Übung 1.
+Verwenden Sie für die erste Überschrift das <em>style</em>-Attribut um inline folgende Eigenschaften festzulegen:</p>
+
+<ul>
+<li>Hintergrundfarbe schwarz (#000)</li>
+<li>Vordergrundfarbe weiß (#fff)</li>
+</ul>
+
+
+<h2>2.2 Style-Tag</h2>
+
+<p>Fügen Sie in Ihren Head-bereich einen Style-Tag ein.
+Definieren Sie innerhalb des Tags via CSS folgende Eigenschaften für den body:</p>
+
+<ul>
+<li>Schriftart &ldquo;sans-serif&rdquo;</li>
+<li>Hintergrundfarbe Ihrer Wahl (z.B. #ffac40)</li>
+</ul>
+
+
+<h2>2.3 Externe CSS Datei</h2>
+
+<p>Legen Sie eine neue Datei &ldquo;style.css&rdquo; an.
+Verwenden Sie den Link-Tag um die Datei in Ihr HTML einzubinden.
+In der &ldquo;style.css&rdquo; sollen folgende Eigenschaften definiert werden:</p>
+
+<ul>
+<li>für alle Links:
+
+<ul>
+<li>Farbe dunkelgrau (z.b. #444)</li>
+<li>Fettschrift</li>
+</ul>
+</li>
+<li>für jede h2 Überschrift eine unterschiedliche Farbe
+
+<ul>
+<li>verwenden Sie hierzu die bereits vergebenen IDs</li>
+<li>drei Beispielfarben: #034569, #8a0041, #5c9900</li>
+</ul>
+</li>
+<li>definieren Sie eine Klasse
+
+<ul>
+<li>mit Hintergrundfarbe weiß</li>
+<li>fügen sie in der HTML Datei den Paragraph, die Unsortierte Liste und den pre-Tag zu dieser Klasse hinzu</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>2.4 Selektoren</h2>
+
+<p>Fügen Sie folgende Styles zur externen Datei hinzu:</p>
+
+<ul>
+<li><p>Selektieren Sie alle H2 Tags die auf ein HR Tag folgen und geben sie diesen die Eigenschaft &ldquo;unterstrichen&rdquo; (Tipp: nicht font-… sondern text-decoration).</p></li>
+<li><p>Geben Sie den Listenelementen der nummerierten Liste die Farbe rot (#FF0000). Warum werden nur die Nummern der Liste Farbig, nicht aber der Text? Beantworten Sie diese Frage im CSS oder HTML Code als Kommentar.</p></li>
+</ul>
+
+</body>
+</html>
