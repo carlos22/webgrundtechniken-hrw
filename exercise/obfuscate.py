@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 import os
-import codecs
 import string
 
 def find_files(pattern):
@@ -21,7 +20,6 @@ def obfuscate(f):
 	i = open(f + '.in', mode='rb')
 	o = open(f,         mode='wb')
 	o.write(string.translate(i.read(), rot13))
-	#o.write(i.read())
 	i.close()
 	o.close()
 	os.unlink(f + '.in')
