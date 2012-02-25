@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    margin: 10px 13px 10px 13px;
+}
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    -background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+@media screen and (min-width: 768px) {
+    body {
+        width: 748px;
+        margin:10px auto;
+    }
+}
+</style>
+<title>aufgabe4-tabellen-forms-js.html</title>
+</head>
+<body>
+<h1>Übung 4: Tabellen, Forms &amp; JavaScript</h1>
+
+<h2>4.1 Vorbereitung</h2>
+
+<p>Laden sie von <a href="http://up.frubar.net/1279/index.html">http://up.frubar.net/1279/index.html</a> das Grundgerüst herunter.
+Es soll ein Formular zur Pizza Bestellung angelegt werden. Die ausgewählten Pizzen werden in einen Einkaufswagen hinzugefügt. Dieser wird als Tabelle dargestellt.</p>
+
+<h2>4.2 Formular</h2>
+
+<p>Die Datei enthält bereits einen Form-Tag.
+Innerhalb soll das Auswahl Formular erstellt werden.
+Die einzelnen Eingabeelemente sollen zu einem <code>fieldset</code> zusammengefasst werden. In der Legende soll &ldquo;Was wollen Sie essen?&rdquo; stehen.</p>
+
+<p>Der Anwender muss drei Angaben machen:</p>
+
+<ul>
+<li>Pizza</li>
+<li>Größe</li>
+<li>Extras</li>
+</ul>
+
+
+<p>Für jede dieser Angaben soll es ein <code>label</code> geben was auf das entsprechende Eingabefeld verweist.</p>
+
+<p>Die Pizza-Auswahl soll über Radio-Buttons realisiert werden.
+Zur Auswahl stehen: Margherita, Salami, Prosciutto, Hawaii und Diavolo.
+Beim Laden der Seite ist keine Pizza ausgewählt.
+Der Name für die Form-Elemente soll &ldquo;pizza&rdquo; lauten.</p>
+
+<p>Die Größe soll ein Dropdown Feld mit den Optionen &ldquo;26 cm&rdquo;, &ldquo;28 cm&rdquo; und &ldquo;Party-Pizza (45x35 cm)&rdquo; sein. Beim Laden der Seite ist &ldquo;28 cm&rdquo; eingestellt.
+Der Name für das Form-Element soll &ldquo;size&rdquo; lauten.</p>
+
+<p>Es gibt drei Extras, welche als Checkboxen umgesetzt werden sollen.
+Es kann &ldquo;Doppelt Käse&rdquo;, &ldquo;Oliven&rdquo; und &ldquo;Pilze&rdquo; gebucht werden.
+Die Form-Elemente sollen über den Namen &ldquo;extra&rdquo; angesprochen werden können.</p>
+
+<p>Wurden alle Angaben gemacht kann der Anwender die Pizza zum Einkaufswagen hinzufügen.
+Dazu wird ein Submit-Button benötigt. Der <code>onclick</code>-Event Handler soll die JavaScript Funktion &ldquo;<code>addPizza();</code>&rdquo; aufrufen.</p>
+
+<h2>4.3 Tabelle</h2>
+
+<p>Der Einkaufswagen soll eine Tabelle mit der id &ldquo;einkaufswagen&rdquo; sein.
+Der <code>thead</code> besteht aus einer Zeile mit 5 Spalten.
+Die Kopfzellen haben die Beschriftungen &ldquo;Pizza&rdquo;, &ldquo;Größe&rdquo;, &ldquo;Doppelt Käse&rdquo;, &ldquo;Oliven&rdquo; und &ldquo;Pilze&rdquo;.
+Der <code>tbody</code> bekommt die id &ldquo;einkaufswagen_body&rdquo;.
+Wurde noch keine Pizza hinzugefügt soll ein Text angezeigt werden.
+Fügen sie dazu eine Zelle, welche über 5 Spalten geht, in eine Table-Row mit der Klasse &ldquo;empty&rdquo; in den <code>tbody</code> ein.
+Der Text dieser Zelle soll wie folgt lauten:</p>
+
+<pre><code>Der Einkaufswagen ist leer.
+Fügen Sie oben ein paar Pizzen hinzu…
+</code></pre>
+
+<p>Ihre Seite sollte nun wie auf dem Screenshot aussehen.</p>
+
+<p><img src="http://up.frubar.net/1278/pizzaservice.png" alt="pizzaservice screenshot"
+style="box-shadow: 0px 0px 15px #888; margin: 1em;"></p>
+
+<h2>4.4 JavaScript</h2>
+
+<p>Für diese Aufgabe sollen keine JS-Libraries oder Frameworks (z.B. jquery) verwendet werden.
+Die <code>addPizza()</code> Funktion soll um diese Punkte vervollständigt werden:</p>
+
+<h4>Validierung der Eingabe</h4>
+
+<p>Wurde noch keine Pizza ausgewählt soll nur eine Nachricht mit dem Text &ldquo;Bitte eine Pizza auswählen.&rdquo; angezeigt werden. Um eine Nachricht anzuzeigen kann die <code>alert()</code> Funktion verwendet werden.</p>
+
+<p>Um herauszufinden welcher Radio-Button ausgewählt ist wurde die Hilfs-Funktion <code>radioValue(radio)</code> mitgeliefert. Diese erwartet als Parameter ein Radio-Button-Form Element und gibt den ausgewählten Wert zurück. Wurde keine Wert gewählt gibt die Funktion <code>false</code> zurück.</p>
+
+<p>Um auf Form-Elemente zuzugreifen können sie <code>document.[formname].[elementname]</code> verwenden.
+Die Form hat in diesem Fall den Namen &ldquo;pizzaform&rdquo; und das Element heisst &ldquo;pizza&rdquo;.
+Übergeben sie der <code>radioValue</code> Funktion also <code>document.pizzaform.pizza</code>.</p>
+
+<h4>Platzhalter Entfernen</h4>
+
+<p>Wird die erste Pizza hinzugefügt ist der Einkaufswagen natürlich nicht mehr leer.
+Die Zeile mit der Klasse &ldquo;empty&rdquo; soll also entfernt werden.</p>
+
+<p>Über die ID wird mit <code>getElementById</code> der &ldquo;einkaufswagen_body&rdquo; aufgelöst und in die Variable <code>ek_body</code> geschrieben. Über DOM Funktionen wie <code>children</code> und <code>removeChild()</code> können die Kind-Elemente manipuliert werden.</p>
+
+<p>Mit der classList API können sie Prüfen ob ein Element teil einer Klasse ist: <code>[e].classList.contains(&lsquo;foo&rsquo;)</code>.</p>
+
+<p>Prüfen sie ob das erste Kind von <code>ek_body</code> in der Klasse &ldquo;empty&rdquo; ist.
+Falls dies der Fall ist entfernen sie dieses Element.</p>
+
+<h4>Neue Zeile zur Tabelle hinzufügen</h4>
+
+<p>Um eine neue Zeile zur Tabelle hinzuzufügen müssen die einzelnen Elemente via JavaScript angelegt und mit Text gefüllt werden.</p>
+
+<p>Hierzu benötigen sie die Funktionen <code>document.createElement()</code> bzw. <code>document.createTextNode()</code> und <code>[e].appendChild()</code>.</p>
+
+<p>Angenommen sie haben ein div mit der ID &ldquo;mydiv&rdquo; und möchten den Code <code>&lt;h1>Hallo Welt&lt;/h1></code> einfügen:</p>
+
+<pre>
+mydiv = document.getElementById('mydiv');
+myh1  = document.createElement('h1');
+myh1.appendChild(document.createTextNode('Hallo Welt'));
+mydiv.appendChild(myh1);
+</pre>
+
+
+<p>Sie müssen so also ein <code>tr</code> und fünf <code>td</code> Tags anlegen.
+Die <code>td</code>-Tags dem <code>tr</code>-Tag und diesen <code>ek_body</code> als Kind hinzufügen.</p>
+
+<p>In der erste Spalte soll die Pizza stehen. Verwenden sie dazu wie bei der Validierung die Funktion <code>radioValue</code>.
+In der zweiten Spalte soll die Größe stehen. Wie bei Text-Feldern und anderen Eingabe Elementen können sie den aktuellen Wert über das Attribut <code>.value</code> abrufen.</p>
+
+<p>Spalten drei bis fünf enthalten, je nach dem ob die entsprechende Checkbox gesetzt ist, ein &ldquo;X&rdquo; oder ein &ldquo;&ndash;&rdquo;. Der Wert einer Checkbox lässt sich über <code>.checked</code> abfragen. Da die drei Checkboxen den selben Namen haben muss der Zugriff als Liste erfolgen. Um zu sehen ob Oliven gefordert wurden kann folgender Code verwendet werden:</p>
+
+<pre><code>document.pizzaform.extra[1].checked
+</code></pre>
+
+<p>Der index beginnt bei 0, um also die zweite Checkbox (Oliven) abzufragen wird index 1 verwendet.</p>
+
+<h2>4.5 jQuery (Optional)</h2>
+
+<p>Erstellen sie eine Kopie ihrer Lösung von Aufgabe 4.4.
+Binden sie die JavaScript Bibliothek jQuery ein.
+Versuchen sie die Funktionalität von 4.4 anstatt mit DOM mit jQuery nachzubilden.</p>
+
+<p>Diese Aufgabe wird nicht gewertet.</p>
+</body>
+</html>
