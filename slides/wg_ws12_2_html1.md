@@ -18,7 +18,7 @@ HTML Bascis: Inhalt / Ziel
 - Allgemeine HTML Elemente
 - Bilder einbinden
 
-=> Vertiefung der Kentnisse in Übung 1 (nächste Woche).
+=> Vertiefung der Kentnisse in Übung 1.
 
 ---
 
@@ -144,7 +144,7 @@ P steht für Paragraph und bildet einen Absatz
 
 <p class="demo">Das ist etwas Text<br>mit einem Umbruch im Text</p>
 
-br erzeugt (weiche) Umbrüche im Text (in Word/Writer: STRG+ENTER)
+br erzeugt (weiche) Umbrüche im Text (in Word/Writer: SHIFT+ENTER)
 
 <ul><li>Überschriften</li></ul>
 
@@ -312,7 +312,7 @@ Beliebige Verschachtelungen von Listen sind möglich
 Nummerierte Listen (ordered list)
 ----------------------------------
 	!html
-	<h2>Anleitung</h1>
+	<h2>Anleitung</h2>
 	<ol>
 		<li>Download</li>
 		<li>Entpacken</li>
