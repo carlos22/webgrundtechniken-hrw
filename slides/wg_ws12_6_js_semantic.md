@@ -356,7 +356,7 @@ JS: Bedingte-Anweisungen
 Wenn-Dann-Abfrage
 
 	!js
-	if (Bedingung) then {...} else {...}
+	if (Bedingung) {...} else {...}
 
 Einfaches Entweder-Oder
 
