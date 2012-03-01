@@ -1188,11 +1188,13 @@ h3 {
                 break;
             case 37: // left arrow
             case 33: // page up
+                event.preventDefault();
                 prevSlide();
                 break;
             case 39: // right arrow
             case 32: // space
             case 34: // page down
+                event.preventDefault();
                 nextSlide();
                 break;
             case 50: // 2
@@ -11899,7 +11901,7 @@ Ist ein alternatives Design für den Ausdruck vorhanden?<br />
 <li>Allgemeine HTML Elemente</li>
 <li>Bilder einbinden</li>
 </ul>
-<p>=&gt; Vertiefung der Kentnisse in Übung 1 (nächste Woche).</p></section>
+<p>=&gt; Vertiefung der Kentnisse in Übung 1.</p></section>
             
           </div>
           <div class="presenter_notes">
@@ -12237,7 +12239,7 @@ Ist ein alternatives Design für den Ausdruck vorhanden?<br />
 
 <p class="demo">Das ist etwas Text<br>mit einem Umbruch im Text</p>
 
-<p>br erzeugt (weiche) Umbrüche im Text (in Word/Writer: STRG+ENTER)</p>
+<p>br erzeugt (weiche) Umbrüche im Text (in Word/Writer: SHIFT+ENTER)</p>
 <ul><li>Überschriften</li></ul>
 
 <div class="highlight"><pre><span class="lineno">1</span> <span class="nt">&lt;h1&gt;</span>Überschrift 1<span class="nt">&lt;/h1&gt;</span>
@@ -12622,7 +12624,7 @@ Beliebige Verschachtelungen von Listen sind möglich<br />
             <header><h2>Nummerierte Listen (ordered list)</h2></header>
             
             
-            <section><div class="highlight"><pre><span class="lineno">1</span> <span class="nt">&lt;h2&gt;</span>Anleitung<span class="nt">&lt;/h1&gt;</span>
+            <section><div class="highlight"><pre><span class="lineno">1</span> <span class="nt">&lt;h2&gt;</span>Anleitung<span class="nt">&lt;/h2&gt;</span>
 <span class="lineno">2</span> <span class="nt">&lt;ol&gt;</span>
 <span class="lineno">3</span>     <span class="nt">&lt;li&gt;</span>Download<span class="nt">&lt;/li&gt;</span>
 <span class="lineno">4</span>     <span class="nt">&lt;li&gt;</span>Entpacken<span class="nt">&lt;/li&gt;</span>
@@ -18315,7 +18317,7 @@ Zeichenkettenverknüpfung: <code>+</code><br />
             
             
             <section><p>Wenn-Dann-Abfrage</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="k">if</span> <span class="p">(</span><span class="nx">Bedingung</span><span class="p">)</span> <span class="nx">then</span> <span class="p">{...}</span> <span class="k">else</span> <span class="p">{...}</span>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="k">if</span> <span class="p">(</span><span class="nx">Bedingung</span><span class="p">)</span> <span class="p">{...}</span> <span class="k">else</span> <span class="p">{...}</span>
 </pre></div>
 
 <p>Einfaches Entweder-Oder</p>
